@@ -1,0 +1,217 @@
+/* Alert component styles */
+@layer base, components;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+}
+
+@layer components {
+    .alert-page .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .alert-page .hero {
+        background: #F5F5F5;
+    }
+
+    .alert-page .hero__title {
+        font-size: 56px;
+        font-weight: 700;
+        color: #FFD300;
+    }
+
+    .alert-grid {
+        display: grid;
+        grid-template-columns: 240px 1fr 64px;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .alert-col {
+        color: #4A4A4A;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .alert-col p {
+        margin: 16px 0 32px !important;
+    }
+
+    .alert-title {
+        color: #1D1C20;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .alert-list {
+        list-style: disc;
+        padding: 0 0 0 18px !important;
+        margin: 16px 0 32px !important;
+    }
+
+    .alert-card, .alert__card {
+        position: relative;
+        border-radius: 12px;
+        padding: 16px !important;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        align-items: start;
+        gap: 12px;
+        border: 1px solid transparent;
+        width: 540px;
+        min-height: 124px;
+    }
+
+    /* Compact card for the Ejemplo */
+    .alert-example-card, .alert__card--example {
+        width: 540px;
+        height: 80px;
+        min-height: 80px;
+        padding: 16px !important;
+    }
+
+    .alert-title, .alert__title {
+        font-weight: 700;
+        font-size: 16px;
+        color: #1D1C20;
+    }
+
+    .alert-desc, .alert__desc {
+        font-size: 14px;
+        color: #4A4A4A;
+        opacity: 0.9;
+    }
+
+    .alert-body, .alert__body {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .alert-btn, .alert__action {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        appearance: none;
+        background: transparent;
+        border: 1px solid currentColor;
+        color: currentColor;
+        border-radius: 40px;
+        padding: 6px 12px !important;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .alert-close, .alert__close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        appearance: none;
+        border: none;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .alert-icon, .alert__icon {
+        width: 18px;
+        height: 18px;
+        background-color: currentColor;
+        -webkit-mask: url('/images/Placeholder.svg') no-repeat center / contain;
+        mask: url('/images/Placeholder.svg') no-repeat center / contain;
+    }
+
+    /* Tick icon style for the example */
+    .alert-tick {
+        width: 18px;
+        height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 1;
+        color: #1D1C20;
+    }
+
+    /* Variants */
+    .alert-brand, .alert__card--brand {
+        background: #FFD300;
+        border-color: #FFD300;
+        color: #1D1C20;
+        padding: 16px;
+    }
+
+    .alert-normal, .alert__card--normal {
+        background: #F5F5F5;
+        border-color: #EAEAEA;
+        color: #1D1C20;
+    }
+
+    .alert-info, .alert__card--info {
+        background: #C9D8F5;
+        border-color: #C9D8F5;
+        color: #1D1C20;
+    }
+
+    .alert-warning, .alert__card--warning {
+        background: #F5EDD6;
+        border-color: #F5EDD6;
+        color: #1D1C20;
+    }
+
+    .alert-error, .alert__card--error {
+        background: #F8B3B4;
+        border-color: #F8B3B4;
+        color: #1D1C20;
+    }
+
+    .alert-success, .alert__card--success {
+        background: #B9E2C5;
+        border-color: #B9E2C5;
+        color: #1D1C20;
+    }
+
+    .alert-row {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 16px !important;
+    }
+
+    .alert-variant-label {
+        color: #4A4A4A;
+        font-size: 14px;
+    }
+
+    .example {
+        margin: 160px 0 48px !important;
+    }
+
+    /* Utilities to replace inline styles in story markup */
+    .flex-row-8 { display:flex; gap:8px; align-items:center; }
+    .mt-12 { margin-top:12px; }
+
+    .description-title { font-weight:700; font-size: 20px; }
+
+    .description p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #4A4A4A;
+    }
+
+    .description {
+        margin-bottom: 60px;
+    }
+}

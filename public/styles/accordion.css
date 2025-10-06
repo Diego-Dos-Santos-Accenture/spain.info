@@ -1,0 +1,117 @@
+/* Accordion styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container p {
+    margin: 28px 0 32px;
+}
+
+.hero {
+    background: #0A0A0A;
+}
+
+.hero .hero__title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section {
+    padding: 24px;
+}
+
+.section h2 { font-size: 14px; line-height: 20px; margin: 0 0 16px; }
+
+.accordion {
+    width: 100%;
+}
+
+.acc-item, .accordion__item {
+    background: #F5F5F5;
+    border-radius: 40px;
+    padding: 8px 16px;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    transition: background .2s, border-color .2s;
+}
+
+.acc-item:hover, .accordion__item:hover {
+    background: #FFD300;
+    border-color: #FFD300;
+}
+
+.acc-item .label, .accordion__label {
+    font-weight: 600;
+    color: #1D1C20;
+}
+
+.acc-item .icon-img, .accordion__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.acc-panel, .accordion__panel {
+    display: none;
+    padding: 12px 16px 0 16px;
+    color: #1D1C20;
+}
+
+.acc-item.open+.acc-panel, .accordion__item.open+.accordion__panel {
+    display: block;
+}
+
+/* Example list items */
+.acc-chip, .accordion__chip {
+    background: #F5F5F5;
+    border-radius: 40px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 8px 8px 0 0;
+    color: #1D1C20;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+.acc-chip:hover, .accordion__chip:hover {
+    background: #FFD300;
+}
+
+/* Spec table like layout */
+.spec-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+    padding: 24px;
+}
+
+.spec-row {
+    display: contents;
+}
+
+.spec-label {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.description-title { font-weight:700; font-size: 20px; }
+
+.description p { font-size: 14px; line-height: 20px; color: #4A4A4A; margin: 16px 0 32px; }
+
+.spec-value {
+    margin-top: 8px;
+}
+
+.spec-value ul {
+    padding: 8px 32px;
+}
+
+.spec-accordion {
+    cursor: pointer;
+}

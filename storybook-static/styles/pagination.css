@@ -1,0 +1,277 @@
+/* Pagination styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  background: #0A0A0A;
+  color: #fff;
+  padding: 64px 0 48px;
+}
+
+.hero__title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #FFD300;
+}
+
+/* Intro strip */
+.intro-strip {
+  background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+  margin: 24px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1D1C20;
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pg-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+}
+
+.pg-col h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1D1C20;
+  margin: 16px 0 8px;
+}
+
+.pg-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 8px 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4A4A4A;
+}
+
+/* Utilities replacing inline headings in story */
+.pg-subtitle {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.pg-title {
+  margin: 16px 0 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Master section */
+
+.pg-master-container {
+  display: flex;
+  flex-direction: row;
+  width: 194px;
+}
+
+.pg-master>.size-note {
+  margin-right: 24px;
+}
+
+.size-note {
+  padding: 30px 48px;
+}
+
+.pg-swatch {
+  background: #1B1C20;
+  border-radius: 0;
+  padding: 34px 34px 34px 34px;
+  width: 100%;
+}
+
+.pg-swatch-dark {
+  background: #1B1C20;
+  border-radius: 0;
+  padding: 34px 30px 34px 34px;
+  width: 100%;
+}
+
+/* Pagination control */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.pg-row,
+.pagination__row {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.pg-variants .pagination {
+  margin-bottom: 0;
+}
+
+.pg-variants .pg-m {
+  margin-bottom: 0;
+}
+
+/* For pagination inside Shadow DOM in variants section */
+.pg-variants-pagination {
+  margin-bottom: 0 !important;
+}
+
+.pg-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1D1C20;
+  background: #FFFFFF;
+  color: #1D1C20;
+  cursor: pointer;
+}
+
+.pg-btn:hover {
+  box-shadow: 0 0 0 2px #FFD300;
+}
+
+.pg-btn.is-current {
+  background: #F70300;
+  color: #FFFFFF;
+  border-color: #F70300;
+}
+
+.pg-btn.is-disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+/* Utility color variants for visual spec */
+.pg-red {
+  background: #F70300;
+  border-color: #F70300;
+  color: #FFFFFF;
+}
+
+.pg-gray {
+  background: #E5E5E5;
+  border-color: #E5E5E5;
+  color: #1D1C20;
+}
+
+.pg-outline-red {
+  background: transparent;
+  border-color: #F70300;
+  color: #F70300;
+}
+
+.pg-master-example-M {
+  padding: 34px;
+}
+
+.pg-master-example-S {
+  padding: 34px;
+}
+
+.pg-outline-gray {
+  background: transparent;
+  border-color: #999;
+  color: #CCCCCC;
+}
+
+/* Sizes - matching Figma specs */
+.pg-m .pg-btn {
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+}
+
+.pg-s .pg-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+}
+
+/* Dark background */
+.pg-dark .pg-btn {
+  background: #1D1C20;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.pg-dark .pg-outline-red {
+  background: transparent;
+  border-color: #F70300;
+  color: #F70300;
+}
+
+.pg-dark .pg-red {
+  background: #F70300;
+  border-color: #F70300;
+  color: #FFFFFF;
+}
+
+/* Variants block */
+.pg-variants {
+  width: 426px;
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.pg-variants .pg-btn {
+  width: 44px;
+  height: 44px;
+}
+
+.pg-master-block {
+  margin-left: 200px;
+}
+
+.pg-variants .pg-number {
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: #1B1C20;
+  font-size: 16px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pg-variant-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pg-variant-group .pg-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pg-s-dark {
+  padding: 0 8px;
+}
+
+.pg-s {
+  padding: 0 6px;
+}

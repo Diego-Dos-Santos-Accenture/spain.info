@@ -1,0 +1,198 @@
+/* Text Field spec page styles (DS layout + component) */
+.intro-strip {
+    background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}
+
+.tf-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.tf-aside h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 16px 0 8px;
+}
+
+.tf-aside p,
+.tf-list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.tf-list {
+    padding-left: 18px;
+    margin: 8px 0 24px;
+    list-style: disc;
+}
+
+.tf-title {
+    font-weight: 700;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 38px;
+}
+
+.tf-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.tf-card--wide {
+    margin-left: calc(-240px - 24px);
+    width: calc(100% + 240px + 24px);
+}
+
+.tf-example-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+/* figma spec helpers */
+.tf-spec-row {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.tf-spec-box {
+    width: 246px;
+    min-height: 334px;
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+    padding: 16px;
+    color: #1B1C20;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tf-spec-box--small {
+    width: 269px;
+    min-height: 116px;
+}
+
+.tf-spec-error {
+    color: #EA2828;
+}
+
+.tf-examples-panel {
+    background: #F8F8F7 !important;
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 72px 95px;
+    margin-left: 18px;
+    margin-bottom: 300px;
+}
+
+/* Master grid */
+.tf-grid-spec {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.tf-grid-spec--s {
+    margin-top: 24px;
+}
+
+.tf-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tf-col--legend {
+    color: #666;
+    font-size: 12px;
+    gap: 12px;
+}
+
+.tf-col-title {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.tf-size {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1B1C20;
+}
+
+.tf-state {
+    font-size: 12px;
+}
+
+/* Base */
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 240px;
+    position: relative;
+  }
+  
+  .text-field__label {
+    font-size: 12px;
+    color: #666;
+    transition: all .2s ease;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    pointer-events: none;
+    background: #F8F8F7;
+    padding: 0 8px;
+  }
+  
+  .text-field__input {
+    height: 40px;
+    border-radius: 42px;
+    border: 2px solid #1d1c20;
+    padding: 0 16px;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    transition: all .2s ease;
+  }
+  
+  .text-field__support {
+    font-size: 10px;
+    color: #666;
+  }
+
+  .text-field .text-field__input:hover {
+    border-color: #b2b2b2;
+    box-shadow: none;
+  }
+
+  .text-field.is-focused .text-field__input {
+    border-color: #1D1C20;
+    box-shadow: 0 0 0 2px #ffd300;
+  }
+
+  .text-field.has-value .text-field__label,
+  .text-field.is-focused .text-field__label {
+    top: 2px;
+    left: 20px;
+    font-size: 10px;
+    color: #666;
+    background: transparent;
+  }
+  

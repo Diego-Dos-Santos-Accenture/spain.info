@@ -1,0 +1,302 @@
+/* Dropdown component styles */
+/* Use global .container from layout.css to avoid duplication */
+
+.hero {
+    background: #0A0A0A;
+    color: #fff;
+    padding: 64px 0 48px;
+}
+
+.hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--color-brand-yellow);
+}
+
+.dropdown-page .description {
+    margin-bottom: 60px;
+}
+
+.dropdown-page .description-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dropdown-page .description p {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    color: var(--color-text-muted);
+}
+
+.dd-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.section-aside h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1C20;
+    font-weight: 700;
+    margin: 16px 0 8px;
+}
+
+.section-aside p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.dd-list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 8px 0 24px;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+/* Control */
+.dd {
+    position: relative;
+    z-index: 1;
+    /* establish stacking context */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #1D1C20;
+    border-radius: 40px;
+    background: #FFFFFF;
+    color: #1D1C20;
+    cursor: pointer;
+    width: 244px;
+}
+
+.dd-label {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.dd-caret {
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: rotate(45deg);
+    margin-right: 8px;
+}
+
+/* Trigger specific layout */
+.dd-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 40px;
+    /* ensure pill shape when colored */
+    padding: 0;
+    /* padding comes from label */
+    outline: none;
+    /* remove focus outline */
+}
+
+/* Sizes */
+.dd-l .dd-label {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.dd-m .dd-label {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.dd-s .dd-label {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Hover */
+.dd:hover {
+    box-shadow: 0 0 0 3px #FFD300;
+    border-color: #1D1C20;
+}
+
+/* Utility: simulate hover ring in examples without inline styles */
+.dd-ring {
+    box-shadow: 0 0 0 3px #FFD300;
+}
+
+/* Opened */
+.dd:active {
+    border-color: #1D1C20;
+    box-shadow: none;
+}
+
+/* Keep control highlighted while open, including when hovering options */
+.dd.dd-open,
+.dd.dd-open:hover {
+    border-color: #FFD300;
+    box-shadow: 0 0 0 3px #FFD300;
+}
+
+.dd-open .dd-trigger {
+    background: #FFD300;
+    border-color: #FFD300;
+    border-radius: 40px;
+}
+
+/* Menu */
+.dd-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 240px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    padding: 8px 0;
+    display: none;
+    z-index: 99999;
+}
+
+.dd-open .dd-menu {
+    display: block;
+}
+
+.dd-option {
+    padding: 10px 16px;
+    font-size: 12px;
+    color: #1D1C20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dd-option:hover {
+    background: #F5F5F5;
+}
+
+/* Master layout */
+.master {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+}
+
+.master-row {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 1fr);
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.master-row:first-of-type {
+    margin-bottom: 90px;
+}
+
+.size-note {
+    justify-content: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.size-note-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.size-col {
+    margin: 18px 0 32px;
+}
+
+.master-title {
+    margin: 12px 0 92px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #4A4A4A;
+}
+
+/* Selected chip */
+.dd-selected {
+    border: 1px solid #1D1C20;
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 6px 12px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sizes-row {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 1fr);
+    gap: 132px;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.master-row-selected {
+    margin-top: 90px;
+}
+
+.dd.dd-open {
+    z-index: 99999;
+    /* ensure open control is above everything including menu */
+    border-color: #FFD300;
+    box-shadow: 0 0 0 3px #FFD300;
+    position: relative;
+}
+
+.master-example-selected {
+    margin-top: 300px;
+}
+
+.master-example-selected .size-note {
+    margin-bottom: 24px;
+}
+
+/* Utilities for layout previously in inline styles */
+.col-flex-24 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.example-label {
+    width: 311px;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+}
+
+.example-label-short {
+    width: 200px;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+}
+
+.dd-example-selected {
+    width: 200px;
+}
+
+/* Intro gray strip */
+.intro-strip {
+    background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}

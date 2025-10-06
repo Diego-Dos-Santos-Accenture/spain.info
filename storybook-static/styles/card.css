@@ -1,0 +1,310 @@
+/* Card component styles */
+.intro-strip {
+    background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.card-aside h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 16px 0 8px;
+}
+
+.card-aside p,
+.card-list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.card-list {
+    padding-left: 18px;
+    margin: 8px 0 24px;
+    list-style: disc;
+}
+
+.card-title {
+    margin: 16px 0 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card-title--full {
+    margin-left: calc(-240px - 24px);
+    width: calc(100% + 240px + 24px);
+    background: #1B1C20;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    margin-top: 32px;
+}
+
+.card-master-grid {
+    display: grid;
+    grid-template-columns: 341px 341px;
+    grid-template-rows: 415px 613px 104px;
+    gap: 16px 16px;
+    row-gap: 76px;
+    margin-bottom: 32px;
+    background: #F8F8F7;
+    padding: 24px;
+    border-radius: 8px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1132px;
+}
+
+.card-master-grid .card:nth-child(3),
+.card-master-grid .card:nth-child(4) {
+    height: 613px;
+}
+
+.card-master-grid .card:nth-child(5),
+.card-master-grid .card:nth-child(6) {
+    grid-column: 1 / -1;
+    width: 620px;
+    height: 104px;
+    justify-self: center;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 341px;
+    height: 415px;
+    padding: 0;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card--vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.card--grey {
+    background: #F8F8F7;
+}
+
+.card__image {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+}
+
+.card-master-grid .card:nth-child(3) .card__image,
+.card-master-grid .card:nth-child(4) .card__image {
+    height: 491px;
+}
+
+.card--horizontal .card__image {
+    width: 112px;
+    height: 104px;
+    flex-shrink: 0;
+}
+
+.card--horizontal .card__content {
+    padding: 16px 24px;
+}
+
+.card__content {
+    padding: 24px;
+    flex: 1;
+    position: relative;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.card__description {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 1.5;
+    margin: 0 !important;
+}
+
+.card__tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #1B1C20;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card-variations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Primera fila - cards pequeñas */
+.card--variation-small {
+    height: 415px;
+    width: 100%;
+}
+
+.card--variation-small .card__image {
+    height: 255px;
+}
+
+/* Segunda fila - cards grandes específicas */
+.card--variation-row2 {
+    height: 613px;
+    width: 100%;
+}
+
+.card--variation-row2 .card__image {
+    height: 453px;
+}
+
+/* Tercera fila - cards horizontales */
+.card--variation-horizontal {
+    width: 620px;
+    height: 104px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.card--variation-horizontal .card__image {
+    width: 200px;
+    height: 104px;
+}
+
+.card--variation-horizontal .card__content {
+    padding: 12px 16px;
+}
+
+.card--variation-horizontal .card__title {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+}
+
+.card--variation-horizontal .card__description {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.card-variation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.card-variation2 {
+    width: 542px;
+}
+
+.card-variation__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin: 0 0 16px 0;
+}
+
+.card-properties {
+    margin-left: calc(-240px - 24px);
+    margin-bottom: 48px;
+    width: calc(100% + 240px + 24px);
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-table th,
+.card-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.card-table th {
+    background: #F8F8F7;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1B1C20;
+}
+
+.card-table td {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+.card-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Static cards - no hover effects */
+.card--static {
+    cursor: default !important;
+}
+
+.card--static:hover {
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-master-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card-title--full,
+    .card-properties {
+        margin-left: 0;
+        width: 100%;
+    }
+}

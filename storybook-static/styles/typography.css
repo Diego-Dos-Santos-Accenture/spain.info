@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #FFFFFF;
+    color: #1D1C20;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    border-bottom: 1px solid #000000;
+}
+
+.top-nav__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.brand__logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #F70300, #FFD300);
+    display: inline-block;
+}
+
+.menu {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 100px;
+}
+
+.hero {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    padding: 64px 0 48px 0;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #FFD300;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.description-title {
+    font-weight:700; 
+    font-size: 16px;
+}
+
+.description p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666;
+    margin: 16px 0 32px;
+}
+
+
+.spec__title {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.spec__family {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.spec__sample {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.spec__sample button {
+    margin-top: 8px;
+}
+
+.display-xxl {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading-lg {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.body-md {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.label-sm {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #666;
+}
+
+.examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.example {
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.example--dark {
+    background: #0A0A0A;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.example h4 {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1200px) {
+    .spec-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+        font-size: 2.25rem;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
