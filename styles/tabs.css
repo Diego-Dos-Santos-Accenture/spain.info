@@ -1,0 +1,237 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.hero {
+    background: #0A0A0A;
+    color: #fff;
+    padding: 64px 0 48px;
+}
+
+.hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #FFD300;
+}
+
+.intro-strip {
+    background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}
+
+.tabs-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.tabs-col h4 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #1D1C20;
+    margin: 16px 0 8px;
+}
+
+.tabs-master-col {
+    margin-left: 48px;
+}
+
+.tabs-list-bullets {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 8px 0 24px;
+}
+
+.tabs-title {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.tabs-master {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tab-states, .tabs__labels {
+    display: flex;
+    gap: 12px;
+    color: #666;
+    font-size: 12px;
+}
+
+.tabs, .tabs__list {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    border-radius: 999px;
+    padding: 6px 0;
+    margin-bottom: 48px;
+    background: #fff;
+    width: fit-content;
+}
+
+.tab-btn, .tabs__btn {
+    appearance: none;
+    border: 2px solid #1D1C20;
+    background: transparent;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    color: #1D1C20;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.tabs__btn--active {
+    background: transparent;
+    border-color: #1D1C20;
+    color: #1B1C20;
+}
+
+.tab-btn::hover, .tabs__btn--hover {
+    background: transparent;
+    border-color: #FFD300;
+    color: #1B1C20;
+}
+
+.tabs__btn--hover {
+    background: transparent;
+    border-color: #FFD300;
+    color: #1B1C20;
+}
+
+.tabs__btn:not(:disabled):not(.tabs__btn--active):not(.tabs__btn--selected):hover {
+    background: transparent;
+    border-color: #FFD300;
+    color: #1B1C20;
+}
+
+.tab-btn.is-disabled, .tabs__btn--disabled {
+    background: #E5E5E5;
+    color: #666;
+    border-color: #E5E5E5;
+}
+
+.tabs__btn--selected {
+    background: #FFD300;
+    border-color: #FFD300;
+    color: #1B1C20;
+}
+
+.tab-btn:disabled, .tabs__btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.tab-btn:is(:focus-visible), .tabs__btn:is(:focus-visible) {
+    outline: 3px solid #FFD300;
+    outline-offset: 2px;
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+
+.tab-panels {
+    border: 1px dashed #C8C8C8;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
+    width: 720px;
+}
+
+.tab-panel {
+    font-size: 14px;
+    color: #1B1C20;
+}
+
+.tabs-mobile, .tabs__mobile-img {
+    width: 360px;
+    height: auto;
+    border: 1px dashed #C8C8C8;
+    border-radius: 8px;
+}
+
+.tabs-mobile-row, .tabs__mobile-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.tabs-mobile-side, .tabs__mobile-side {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tabs-mobile-side h4, .tabs__mobile-side h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1B1C20;
+}
+
+.tabs-mobile-side p, .tabs__mobile-side p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1B1C20;
+}
+
+.tabs-cta, .tabs__cta {
+    align-self: flex-start;
+    padding: 8px 16px;
+    border-radius: 40px;
+    background: #E71C03;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.tab-label-active, .tabs__label--active {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1B1C20;
+    margin: 0 24px;
+}
+
+.tab-label-hover, .tabs__label--hover {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1B1C20;
+    margin: 0 24px;
+}
+
+.tab-label-selected, .tabs__label--selected {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1B1C20;
+    margin: 0 12px;
+}
+
+.tab-label-disabled, .tabs__label--disabled {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1B1C20;
+    margin: 0 18px;
+}

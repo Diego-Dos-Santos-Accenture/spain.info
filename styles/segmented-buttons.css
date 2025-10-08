@@ -1,0 +1,208 @@
+.sg-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 58px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.hero {
+    background: #0A0A0A;
+    color: #fff;
+    padding: 64px 0 48px;
+}
+
+.hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #FFD300;
+}
+
+.intro-strip {
+    background: #F5F5F5;
+}
+
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}
+
+.sg-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.sg-col h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1D1C20;
+    margin: 16px 0 8px;
+}
+
+.sg-list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 8px 0 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.sg-title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.sg-master,
+.sg-states {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.segmented {
+    display: flex;
+    background: #fff;
+    border: 2px solid #1D1C20;
+    border-radius: 999px;
+    height: auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.segmented .seg-btn,
+.segmented .segmented__btn {
+    border: 0;
+    background: transparent;
+    padding: 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: #1D1C20;
+    font-weight: 500;
+    flex: 1 1 0;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.segmented .seg-btn:is(:focus-visible),
+.segmented .segmented__btn:is(:focus-visible) {
+    outline: 3px solid #FFD300;
+    /* thicker focus */
+    outline-offset: 2px;
+    border-radius: 999px;
+}
+
+.segmented .seg-btn.is-active,
+.segmented .segmented__btn.is-active {
+    background: #FFD300;
+    color: #1B1C20;
+}
+
+.segmented .seg-btn:disabled,
+.segmented .segmented__btn:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+.segmented .seg-btn img {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    flex-shrink: 0;
+}
+
+.sg-container {
+    margin-left: 48px;
+}
+
+.sg-m .seg-btn {
+    font-size: 16px;
+}
+
+.segmented.sg-s .seg-btn,
+.sg-s .seg-btn {
+    padding: 10px;
+    height: 32px;
+    min-height: 32px;
+}
+
+:host {
+    display: inline-block;
+}
+
+.seg-btn {
+    border: 0;
+    background: transparent;
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: #1D1C20;
+    font-weight: 500;
+    flex: 1 1 0;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 36px;
+    min-height: 36px;
+    box-sizing: border-box
+}
+
+.seg-btn.is-active {
+    background: #FFD300;
+    color: #1B1C20
+}
+
+.seg-btn:disabled {
+    opacity: .4;
+    cursor: not-allowed
+}
+
+.seg-btn:focus-visible {
+    outline: 3px solid #FFD300;
+    outline-offset: 2px;
+    border-radius: 999px
+}
+
+:host([data-size="s"]) .seg-btn {
+    padding: 6px 10px;
+    height: 32px;
+    min-height: 32px
+}
+
+::slotted(img.sg-image) {
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    flex-shrink: 0
+}
