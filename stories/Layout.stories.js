@@ -39,7 +39,7 @@ export const Default = () => `
             <div class="spec-item"><strong>Gutter:</strong> 16px</div>
           </div>
           <div class="grid-visual mobile-grid">
-            <img src="/images/MMobile.png" alt="M - Mobile Grid" />
+            <img src="images/MMobile.png" alt="M - Mobile Grid" />
           </div>
         </div>
 
@@ -53,7 +53,7 @@ export const Default = () => `
             <div class="spec-item"><strong>Gutter:</strong> 16px</div>
           </div>
           <div class="grid-visual tablet-grid">
-            <img src="/images/MTablet.png" alt="M - Tablet Grid" />
+            <img src="images/MTablet.png" alt="M - Tablet Grid" />
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export const Default = () => `
             <div class="spec-item"><strong>Gutter:</strong> 16px</div>
           </div>
           <div class="grid-visual tablet-grid">
-            <img src="/images/LTablet.png" alt="L - Tablet Grid" />
+            <img src="images/LTablet.png" alt="L - Tablet Grid" />
           </div>
         </div>
 
@@ -81,7 +81,7 @@ export const Default = () => `
             <div class="spec-item"><strong>Gutter:</strong> 32px</div>
           </div>
           <div class="grid-visual desktop-grid">
-            <img src="/images/XLDesktop.png" alt="XL - Desktop Grid" />
+            <img src="images/XLDesktop.png" alt="XL - Desktop Grid" />
           </div>
         </div>
 
@@ -95,7 +95,7 @@ export const Default = () => `
             <div class="spec-item"><strong>Gutter:</strong> 32px</div>
           </div>
           <div class="grid-visual desktop-large-grid">
-            <img src="/images/XXLDesktopLarge.png" alt="XXL - Desktop Large Grid" />
+            <img src="images/XXLDesktopLarge.png" alt="XXL - Desktop Large Grid" />
           </div>
         </div>
       </div>

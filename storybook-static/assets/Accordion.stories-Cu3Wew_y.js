@@ -1,15 +1,6 @@
-export default {
-  title: 'Components/Accordion',
-  parameters: { layout: 'fullscreen' }
-};
-
-const baseStylesheet = 'styles/layout.css';
-const stylesheet = 'styles/accordion.css';
-
-
-export const Default = () => `
-  <link rel="stylesheet" href="${baseStylesheet}" />
-  <link rel="stylesheet" href="${stylesheet}" />
+const a={title:"Components/Accordion",parameters:{layout:"fullscreen"}},c="styles/layout.css",i="styles/accordion.css",e=()=>`
+  <link rel="stylesheet" href="${c}" />
+  <link rel="stylesheet" href="${i}" />
   <script>
     class SpainAccordionItem extends HTMLElement {
       constructor() {
@@ -30,10 +21,10 @@ export const Default = () => `
       
       render() {
         this.shadowRoot.innerHTML = \`
-          <link rel="stylesheet" href="${stylesheet}" />
+          <link rel="stylesheet" href="${i}" />
           <div class="accordion__item \${this.open ? 'open' : ''}">
             <span class="accordion__label">\${this.getAttribute('label') || 'Accordion Item'}</span>
-            <img class="accordion__icon" src="\${this.open ? 'images/circle-minus.svg' : 'images/circle-plus.svg'}" alt="toggle" />
+            <img class="accordion__icon" src="\${this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'}" alt="toggle" />
           </div>
           <div class="accordion__panel" style="display: \${this.open ? 'block' : 'none'}">
             <slot></slot>
@@ -43,7 +34,7 @@ export const Default = () => `
     }
     
     customElements.define('spain-accordion-item', SpainAccordionItem);
-  </script>
+  <\/script>
 
   <header class="top-nav">
     <div class="top-nav__inner">
@@ -88,13 +79,7 @@ export const Default = () => `
       </div>
     </div>
   </div>
-`;
-
-Default.parameters = {
-  docs: { source: { code: '<div class="accordion__item">¿Qué es y cómo recuperar el IVA?</div>', state: 'closed' } },
-  stencil: {
-    html: '<spain-accordion><spain-accordion-item label="¿Qué es y cómo recuperar el IVA?">Contenido del panel</spain-accordion-item></spain-accordion>',
-    css: `
+`;e.parameters={docs:{source:{code:'<div class="accordion__item">¿Qué es y cómo recuperar el IVA?</div>',state:"closed"}},stencil:{html:'<spain-accordion><spain-accordion-item label="¿Qué es y cómo recuperar el IVA?">Contenido del panel</spain-accordion-item></spain-accordion>',css:`
 .accordion {
   width: 100%;
 }
@@ -156,8 +141,7 @@ Default.parameters = {
 .accordion__chip:hover {
   background: #FFD300;
 }
-`,
-    tsx: `
+`,tsx:`
 import { Component, h, Prop, State } from '@stencil/core';
 
 @Component({ tag: 'spain-accordion-item', shadow: true })
@@ -177,7 +161,7 @@ export class SpainAccordionItem {
           <span class="accordion__label">{this.label}</span>
           <img 
             class="accordion__icon" 
-            src={this.open ? 'images/circle-minus.svg' : 'images/circle-plus.svg'} 
+            src={this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'} 
             alt="toggle" 
           />
         </button>
@@ -195,6 +179,85 @@ export class SpainAccordion {
     return <div class="accordion"><slot /></div>;
   }
 }
-`
-  }
-};
+`}};var s,n,o;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`() => \`
+  <link rel="stylesheet" href="\${baseStylesheet}" />
+  <link rel="stylesheet" href="\${stylesheet}" />
+  <script>
+    class SpainAccordionItem extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.open = false;
+      }
+      
+      connectedCallback() {
+        this.render();
+        this.addEventListener('click', this.toggle.bind(this));
+      }
+      
+      toggle() {
+        this.open = !this.open;
+        this.render();
+      }
+      
+      render() {
+        this.shadowRoot.innerHTML = \\\`
+          <link rel="stylesheet" href="\${stylesheet}" />
+          <div class="accordion__item \\\${this.open ? 'open' : ''}">
+            <span class="accordion__label">\\\${this.getAttribute('label') || 'Accordion Item'}</span>
+            <img class="accordion__icon" src="\\\${this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'}" alt="toggle" />
+          </div>
+          <div class="accordion__panel" style="display: \\\${this.open ? 'block' : 'none'}">
+            <slot></slot>
+          </div>
+        \\\`;
+      }
+    }
+    
+    customElements.define('spain-accordion-item', SpainAccordionItem);
+  <\/script>
+
+  <header class="top-nav">
+    <div class="top-nav__inner">
+      <div class="brand" title="Spain.info DS"></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__title">Accordion</div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="description">
+      <div class="description-title">Descripción y uso</div>
+      <p>El acordeón permite mostrar y ocultar secciones de contenido de forma vertical, optimizando el espacio en pantalla...</p>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-label">Comportamiento</div>
+      <div class="spec-value spec-accordion">
+        <spain-accordion-item label="¿Qué es y cómo recuperar el IVA?"></spain-accordion-item>
+      </div>
+
+      <div class="spec-label">Variantes y estados</div>
+      <div class="spec-value">
+        <ul>
+          <li>Closed (default)</li>
+          <li>Hover</li>
+          <li>Opened</li>
+        </ul>
+      </div>
+
+      <div class="spec-label">Ejemplo</div>
+      <div class="spec-value spec-accordion">
+        <spain-accordion-item label="¿Qué es y cómo recuperar el IVA?">
+          <p>El IVA o impuesto de valor añadido es un impuesto indirecto que grava el consumo final de productos y servicios. Todos los residentes fuera de la Unión Europea pueden solicitar la devolución del importe derivado de compras ocasionales de artículos de uso personal o para regalo.</p>
+          <div class="acc-chip">Llegar en coche</div>
+          <div class="acc-chip">Llegar en avión</div>
+        </spain-accordion-item>
+      </div>
+    </div>
+  </div>
+\``,...(o=(n=e.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const r=["Default"];export{e as Default,r as __namedExportsOrder,a as default};

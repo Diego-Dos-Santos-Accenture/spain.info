@@ -103,9 +103,9 @@ export const Primary = () => `
       <div class="button-demo">
         <h3>Sizes</h3>
         <div class="button-row">
-          <spain-button variant="primary" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="primary" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="primary" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
         
         <h3>States</h3>
@@ -301,9 +301,9 @@ export const Secondary = () => `
       <div class="button-demo">
         <h3>Sizes</h3>
         <div class="button-row">
-          <spain-button variant="secondary" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="secondary" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="secondary" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="secondary" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="secondary" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="secondary" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
         
         <h3>States</h3>
@@ -501,9 +501,9 @@ export const Tertiary = () => `
       <div class="button-demo">
         <h3>Sizes</h3>
         <div class="button-row">
-          <spain-button variant="tertiary" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="tertiary" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="tertiary" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="tertiary" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="tertiary" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="tertiary" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
         
         <h3>States</h3>
@@ -700,9 +700,9 @@ export const ButtonLink = () => `
       <div class="button-demo">
         <h3>Sizes</h3>
         <div class="button-row">
-          <spain-button variant="link" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="link" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="link" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
         
         <h3>States</h3>
@@ -906,30 +906,30 @@ export const DarkTheme = () => `
       <div class="button-demo">
         <h3>Primary</h3>
         <div class="button-row">
-          <spain-button variant="primary" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="primary" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="primary" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="primary" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
         
         <h3>Secondary</h3>
         <div class="button-row">
-          <spain-button variant="secondary" size="l" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
-          <spain-button variant="secondary" size="m" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
-          <spain-button variant="secondary" size="xs" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="secondary" size="l" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="secondary" size="m" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="secondary" size="xs" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
         </div>
         
         <h3>Tertiary</h3>
         <div class="button-row">
-          <spain-button variant="tertiary" size="l" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
-          <spain-button variant="tertiary" size="m" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
-          <spain-button variant="tertiary" size="xs" icon="/images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="tertiary" size="l" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="tertiary" size="m" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
+          <spain-button variant="tertiary" size="xs" icon="images/Placeholder.svg" dark-theme="true">Button</spain-button>
         </div>
         
         <h3>Button Link</h3>
         <div class="button-row">
-          <spain-button variant="link" size="l" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="link" size="m" icon="/images/Placeholder.svg">Button</spain-button>
-          <spain-button variant="link" size="xs" icon="/images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="l" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="m" icon="images/Placeholder.svg">Button</spain-button>
+          <spain-button variant="link" size="xs" icon="images/Placeholder.svg">Button</spain-button>
         </div>
       </div>
     </div>

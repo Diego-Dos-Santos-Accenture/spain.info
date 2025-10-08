@@ -1,15 +1,6 @@
-export default {
-  title: 'Components/Slider',
-  parameters: { layout: 'fullscreen' }
-};
-
-const stylesheet = 'styles/slider.css';
-const baseStylesheet = 'styles/layout.css';
-
-function renderSlider() {
-  return `
-  <link rel="stylesheet" href="${baseStylesheet}" />
-  <link rel="stylesheet" href="${stylesheet}" />
+const l={title:"Components/Slider",parameters:{layout:"fullscreen"}},n="styles/slider.css",r="styles/layout.css";function a(){return`
+  <link rel="stylesheet" href="${r}" />
+  <link rel="stylesheet" href="${n}" />
 
   <header class="top-nav">
     <div class="top-nav__inner">
@@ -51,7 +42,7 @@ function renderSlider() {
               <div class="slider-title">Master</div>
               
               <div class="slider-examples">
-                <img src="images/Slider.png" alt="Slider Master" />
+                <img src="/images/Slider.png" alt="Slider Master" />
 
                 <h4>Example</h4>
                 <div class="slider-progress-demo"><spain-progress-3 step="1"></spain-progress-3></div>
@@ -119,15 +110,8 @@ function renderSlider() {
       const mount = document.getElementById('carousel-progress');
       if(mount) mount.innerHTML = '<spain-progress-3 step="1"></spain-progress-3>';
     })();
-  </script>
-`; 
-}
-
-const sliderParameters = {
-  stencil: {
-    usage: 'Barra de progreso para Carousel con 3 etapas y dos botones a la derecha.',
-    html: '<spain-progress-3 step="1"></spain-progress-3>',
-    css: `
+  <\/script>
+`}const o={stencil:{usage:"Barra de progreso para Carousel con 3 etapas y dos botones a la derecha.",html:'<spain-progress-3 step="1"></spain-progress-3>',css:`
 .prg {
   display: flex;
   align-items: center;
@@ -173,9 +157,44 @@ const sliderParameters = {
   color: #8C8C8C;
   cursor: not-allowed;
 }
-`,
-    tsx: 'import { Component, h, Prop, State, Listen } from "@stencil/core";\n\n@Component({ tag: "spain-progress-3", shadow: true, styleUrl: "slider.css" })\nexport class SpainProgress3 {\n  @Prop({ mutable: true, reflect: true }) step: 1 | 2 | 3 = 1;\n  @State() left: string = "0%";\n\n  componentWillLoad() { this.updatePosition(); }\n\n  @Listen("click")\n  onHostClick(ev: Event) {\n    const target = ev.composedPath()[0] as HTMLElement;\n    if (target && (target as any).getAttribute) {\n      if ((target as any).getAttribute("data-prev") !== null && this.step > 1) { this.step = (this.step - 1) as any; this.updatePosition(); }\n      if ((target as any).getAttribute("data-next") !== null && this.step < 3) { this.step = (this.step + 1) as any; this.updatePosition(); }\n    }\n  }\n\n  private updatePosition() {\n    if (this.step === 1) this.left = "0%";\n    else if (this.step === 2) this.left = "30%";\n    else this.left = "60%";\n  }\n\n  render() {\n    const prevDisabled = this.step === 1;\n    const nextDisabled = this.step === 3;\n    return (\n      <div class=\"prg\" role=\"group\" aria-label=\"Carousel progress\">\n        <div class=\"prg-line\"><div class=\"prg-fill\" style={{ left: this.left }} /></div>\n        <div class=\"prg-actions\">\n          <button class=\"prg-btn\" data-prev disabled={prevDisabled}>‹</button>\n          <button class=\"prg-btn\" data-next disabled={nextDisabled}>›</button>\n        </div>\n      </div>\n    );\n  }\n}'
-  }
-};
+`,tsx:`import { Component, h, Prop, State, Listen } from "@stencil/core";
 
-export const Default = { render: renderSlider, parameters: sliderParameters };
+@Component({ tag: "spain-progress-3", shadow: true, styleUrl: "slider.css" })
+export class SpainProgress3 {
+  @Prop({ mutable: true, reflect: true }) step: 1 | 2 | 3 = 1;
+  @State() left: string = "0%";
+
+  componentWillLoad() { this.updatePosition(); }
+
+  @Listen("click")
+  onHostClick(ev: Event) {
+    const target = ev.composedPath()[0] as HTMLElement;
+    if (target && (target as any).getAttribute) {
+      if ((target as any).getAttribute("data-prev") !== null && this.step > 1) { this.step = (this.step - 1) as any; this.updatePosition(); }
+      if ((target as any).getAttribute("data-next") !== null && this.step < 3) { this.step = (this.step + 1) as any; this.updatePosition(); }
+    }
+  }
+
+  private updatePosition() {
+    if (this.step === 1) this.left = "0%";
+    else if (this.step === 2) this.left = "30%";
+    else this.left = "60%";
+  }
+
+  render() {
+    const prevDisabled = this.step === 1;
+    const nextDisabled = this.step === 3;
+    return (
+      <div class="prg" role="group" aria-label="Carousel progress">
+        <div class="prg-line"><div class="prg-fill" style={{ left: this.left }} /></div>
+        <div class="prg-actions">
+          <button class="prg-btn" data-prev disabled={prevDisabled}>‹</button>
+          <button class="prg-btn" data-next disabled={nextDisabled}>›</button>
+        </div>
+      </div>
+    );
+  }
+}`}},e={render:a,parameters:o};var t,s,i;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  render: renderSlider,
+  parameters: sliderParameters
+}`,...(i=(s=e.parameters)==null?void 0:s.docs)==null?void 0:i.source}}};const d=["Default"];export{e as Default,d as __namedExportsOrder,l as default};

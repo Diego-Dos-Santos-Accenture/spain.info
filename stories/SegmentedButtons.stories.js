@@ -125,17 +125,17 @@ export const Default = () => `
         <div class="sg-master">
           <div class="sg-row">
             <spain-segmented-buttons size="m" value="option-1">
-              <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
-              <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
-              <spain-segmented-option value="option-3">Option 3 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
-              <spain-segmented-option value="option-4">Option 4 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-3">Option 3 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-4">Option 4 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
             </spain-segmented-buttons>
           </div>
 
           <div class="sg-row">
             <spain-segmented-buttons size="s" value="option-1">
-              <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
-              <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
+              <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="images/Placeholder.svg" alt="Placeholder" /></spain-segmented-option>
             </spain-segmented-buttons>
           </div>
         </div>
@@ -148,7 +148,7 @@ Default.parameters = {
   docs: { source: { code: '<spain-segmented-buttons size="m" value="option-1"><spain-segmented-option value="option-1">Option 1</spain-segmented-option><spain-segmented-option value="option-2">Option 2</spain-segmented-option></spain-segmented-buttons>', state: 'closed' } },
   stencil: {
     usage: 'Segmented Buttons con tamaños M y S. Copia HTML, CSS y TSX para reutilizar el componente tal cual.',
-    html: '<spain-segmented-buttons size="m" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-3">Option 3 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-4">Option 4 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>\n\n<spain-segmented-buttons size="s" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>',
+    html: '<spain-segmented-buttons size="m" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-3">Option 3 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-4">Option 4 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>\n\n<spain-segmented-buttons size="s" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>',
     css: `
 .segmented {
   display: inline-flex;

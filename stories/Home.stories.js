@@ -13,7 +13,7 @@ export const Homepage = () => `
     </div>
   </header>
   <main class="home">
-    <img class="home__logo" src="/images/Logotipo.svg" alt="Spain.info logo" />
+    <img class="home__logo" src="images/Logotipo.svg" alt="Spain.info logo" />
   </main>
 `;
 
