@@ -16,7 +16,6 @@ function toggleThemeScript() {
   return script.outerHTML;
 }
 
-// Helpers to decide readable text color on a background
 function hexToRgb(hex) {
   const clean = hex.replace('#','');
   const bigint = parseInt(clean.length === 3 ? clean.split('').map(c=>c+c).join('') : clean, 16);

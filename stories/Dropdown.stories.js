@@ -29,7 +29,6 @@ export const Default = () => {
   <link rel="stylesheet" href="${baseStylesheet}" />
   <link rel="stylesheet" href="${stylesheet}" />
   <script type="module">
-    // Stencil-like Dropdown components (inline for demo)
     class SpainDropdownOption extends HTMLElement {
       constructor(){
         super();

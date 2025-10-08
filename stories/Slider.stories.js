@@ -123,7 +123,6 @@ function renderSlider() {
 `; 
 }
 
-// Code panel snippets for re-use
 const sliderParameters = {
   stencil: {
     usage: 'Barra de progreso para Carousel con 3 etapas y dos botones a la derecha.',

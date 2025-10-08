@@ -210,6 +210,7 @@ export class SpainButton {
 export const Secondary = () => `
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
+    // Stencil Button Component (inline para demo)
     class SpainButton extends HTMLElement {
       constructor() {
         super();

@@ -10,7 +10,6 @@ export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Card Component (inline para demo)
     class SpainCard extends HTMLElement {
       constructor() {
         super();
