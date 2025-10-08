@@ -1,0 +1,1 @@
+const o={actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},docs:{source:{type:"dynamic"}},options:{storySort:{method:"alphabetical",order:["Foundations","Components"]}}};export{o as parameters};

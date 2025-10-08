@@ -3,8 +3,8 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/dropdown.css';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/dropdown.css';
 
 function script() {
   document.querySelectorAll('[data-dd]').forEach((root) => {

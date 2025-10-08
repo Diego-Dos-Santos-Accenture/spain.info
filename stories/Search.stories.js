@@ -3,9 +3,9 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/search.css';
-const searchImg = '/images/Search.png';
+const baseStylesheet = 'styles/layout.css'; 
+const stylesheet = 'styles/search.css';
+const searchImg = 'images/Search.png';
 
 export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />

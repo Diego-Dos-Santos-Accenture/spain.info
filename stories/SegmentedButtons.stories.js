@@ -3,9 +3,9 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/segmented-buttons.css';
-const placeholderImg = '/images/Placeholder.png';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/segmented-buttons.css';
+const placeholderImg = 'images/Placeholder.png';
 
 export const Default = () => `
   <script>

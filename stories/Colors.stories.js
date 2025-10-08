@@ -3,7 +3,7 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const stylesheet = '/styles/colors.css';
+const stylesheet = 'styles/colors.css';
 
 function toggleThemeScript() {
   const script = document.createElement('script');

@@ -146,7 +146,6 @@ h4 {
     color: #999;
 }
 
-/* Base button styles */
 .btn, .button__btn {
     display: inline-flex;
     align-items: center;
@@ -172,7 +171,6 @@ h4 {
     filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
-/* White icon for buttons with white text */
 .btn-primary .btn-icon,
 .btn-primary.btn-hover .btn-icon,
 .btn-primary.btn-focused .btn-icon,
@@ -181,19 +179,16 @@ h4 {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-/* Button link icons - darker red by default */
 .btn-link .btn-icon,
 .btn-link.btn-pressed .btn-icon {
     filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(10000%) hue-rotate(0deg) brightness(80%) contrast(100%);
 }
 
-/* Button link icons - brighter red on hover/focus */
 .btn-link.btn-hover .btn-icon,
 .btn-link.btn-focused .btn-icon {
     filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-/* Dark gray icon for disabled buttons */
 .btn-primary.btn-disabled .btn-icon,
 .btn-secondary.btn-disabled .btn-icon,
 .btn-tertiary.btn-disabled .btn-icon,
@@ -211,7 +206,6 @@ h4 {
     filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-/* Button sizes */
 .btn-l {
     padding: 12px 20px;
     font-size: 1rem;
@@ -338,18 +332,15 @@ h4 {
     outline: none !important;
 }
 
-/* Dark theme secondary icons should follow label color per state */
+/* Dark theme icon styles */
 .dark-theme .btn-secondary.btn-active .btn-icon {
-    /* white icon for active */
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
+
 .dark-theme .btn-secondary.btn-hover .btn-icon {
-    /* yellow icon for hover */
     filter: brightness(0) saturate(100%) invert(81%) sepia(95%) saturate(622%) hue-rotate(358deg) brightness(104%) contrast(104%);
 }
-/* focused/pressed/selected use default (black) from base .btn-icon */
 
-/* Dark theme tertiary icons follow label color (white) */
 .dark-theme .btn-tertiary .btn-icon {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
@@ -384,10 +375,10 @@ h4 {
 }
 
 .btn-tertiary.btn-hover {
-    background: #FFD300; /* match secondary pressed/selected */
+    background: #FFD300;
     color: #1D1C20;
     border: 1px solid #FFD300;
-    padding: 8px 16px; /* match secondary padding */
+    padding: 8px 16px;
 }
 
 .btn-tertiary.btn-disabled {
@@ -426,7 +417,7 @@ h4 {
 
 .btn-link.btn-hover {
     background: transparent;
-    color: #F70300; /* brighter red on hover */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
@@ -434,7 +425,7 @@ h4 {
 
 .btn-link.btn-focused {
     background: transparent;
-    color: #F70300; /* brighter red on focus */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
@@ -444,7 +435,7 @@ h4 {
 
 .btn-link.btn-pressed {
     background: transparent;
-    color: #BB2622; /* darker red when pressed */
+    color: #BB2622;
     text-decoration: underline;
     text-decoration-color: #BB2622;
     text-underline-offset: 4px;
@@ -459,14 +450,14 @@ h4 {
 }
 
 .dark-theme .btn-link {
-    color: #BB2622; /* darker red by default */
+    color: #BB2622;
     text-decoration: underline;
     text-decoration-color: #BB2622;
     text-underline-offset: 4px;
 }
 
 .dark-theme .btn-link.btn-hover {
-    color: #F70300; /* brighter red on hover */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
@@ -477,7 +468,7 @@ h4 {
 }
 
 .dark-theme .btn-link.btn-focused {
-    color: #F70300; /* brighter red on focus */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
@@ -485,7 +476,7 @@ h4 {
 }
 
 .dark-theme .btn-link.btn-pressed {
-    color: #BB2622; /* darker red when pressed */
+    color: #BB2622;
     text-decoration: underline;
     text-decoration-color: #BB2622;
     text-underline-offset: 4px;
@@ -498,7 +489,6 @@ h4 {
     text-underline-offset: 4px;
 }
 
-/* Interactive button demo styles */
 .button-demo {
     margin-top: 2rem;
 }
@@ -584,7 +574,6 @@ h4 {
     color: #FFFFFF;
 }
 
-/* Real hover effects for interactive buttons */
 .btn:hover:not(:disabled):not(.btn-link) {
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -599,7 +588,6 @@ h4 {
     outline: none;
 }
 
-/* Disabled button styles for interactive demos */
 .btn:disabled {
     cursor: not-allowed;
     transform: none !important;
@@ -701,7 +689,6 @@ h4 {
 }
 
 .dark-theme .btn-secondary:hover:not(:disabled) .btn-icon {
-    /* yellow icon for interactive hover */
     filter: brightness(0) saturate(100%) invert(81%) sepia(95%) saturate(622%) hue-rotate(358deg) brightness(104%) contrast(104%);
 }
 
@@ -741,34 +728,33 @@ h4 {
 /* Button Link hover effects */
 .btn-link:hover:not(:disabled) {
     background: transparent;
-    color: #F70300; /* brighter red on hover */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
 }
 
 .btn-link:active:not(:disabled) {
-    color: #BB2622; /* darker red when pressed */
+    color: #BB2622;
     text-decoration: underline;
     text-decoration-color: #BB2622;
     text-underline-offset: 4px;
 }
 
 .dark-theme .btn-link:hover:not(:disabled) {
-    color: #F70300; /* brighter red on hover */
+    color: #F70300;
     text-decoration: underline;
     text-decoration-color: #F70300;
     text-underline-offset: 4px;
 }
 
 .dark-theme .btn-link:active:not(:disabled) {
-    color: #BB2622; /* darker red when pressed */
+    color: #BB2622;
     text-decoration: underline;
     text-decoration-color: #BB2622;
     text-underline-offset: 4px;
 }
 
-/* Dark theme Button Link SVG colors */
 .dark-theme .btn-link:hover:not(:disabled) .btn-icon,
 .dark-theme .btn-link.btn-hover .btn-icon {
     filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;

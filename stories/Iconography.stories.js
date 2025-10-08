@@ -3,7 +3,7 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const stylesheet = '/styles/iconography.css';
+const stylesheet = 'styles/iconography.css';
 
 export const Default = () => `
   <link rel="stylesheet" href="${stylesheet}" />

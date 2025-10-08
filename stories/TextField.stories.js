@@ -3,9 +3,9 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/text-field.css';
-const textFieldScript = '/stories/text-field.js';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/text-field.css';
+const textFieldScript = 'stories/text-field.js';
 
 export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />

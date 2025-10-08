@@ -1,6 +1,3 @@
-/* Slider styles */
-
-/* Local layout for Slider page */
 .intro-strip {
     background: #F5F5F5;
 }
@@ -12,18 +9,18 @@
     color: #1D1C20;
 }
 
-.section-row, .slider__row {
+.section-row,
+.slider__row {
     display: grid;
     grid-template-columns: 280px 1fr;
     gap: 32px;
     align-items: start;
 }
 
-.section-content, .slider__content {
+.section-content,
+.slider__content {
     min-width: 0;
 }
-
-/* Master section */
 
 .slider-title {
     font-size: 16px;
@@ -42,7 +39,6 @@
     font-weight: 400;
 }
 
-/* Slider examples */
 .slider-examples {
     display: flex;
     flex-direction: column;
@@ -55,11 +51,11 @@
     gap: 16px;
 }
 
-/* Page spacing for progress demo under image */
-.slider-progress-demo { margin-top: 24px; }
 
-/* Progress component styles (spain-progress-3) */
-/* ---- COMPONENT CSS START ---- */
+.slider-progress-demo {
+    margin-top: 24px;
+}
+
 .slider-progress {
     position: relative;
     width: 520px;
@@ -87,7 +83,6 @@
     transition: width 0.3s ease;
 }
 
-/* Controls */
 .slider-controls {
     display: flex;
     gap: 8px;
@@ -122,11 +117,48 @@
     cursor: not-allowed;
 }
 
-/* Progress web component classes */
-.prg { display: flex; align-items: center; gap: 12px; }
-.prg-line { position: relative; flex: 1; height: 2px; background: #F2F2F2; }
-.prg-fill { position: absolute; top: 0; height: 2px; background: #E73625; width: 40%; left: 0; }
-.prg-actions { display: inline-flex; gap: 8px; }
-.prg-btn { width: 24px; height: 24px; border-radius: 50%; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: #E73625; }
-.prg-btn:disabled { background: #EAEAEA; color: #8C8C8C; cursor: not-allowed; }
-/* ---- COMPONENT CSS END ---- */
+.prg {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.prg-line {
+    position: relative;
+    flex: 1;
+    height: 2px;
+    background: #F2F2F2;
+}
+
+.prg-fill {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    background: #E73625;
+    width: 40%;
+    left: 0;
+}
+
+.prg-actions {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.prg-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #E73625;
+}
+
+.prg-btn:disabled {
+    background: #EAEAEA;
+    color: #8C8C8C;
+    cursor: not-allowed;
+}

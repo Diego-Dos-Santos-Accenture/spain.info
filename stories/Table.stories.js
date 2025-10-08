@@ -3,8 +3,8 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/table.css';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/table.css';
 
 export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />

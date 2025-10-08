@@ -3,8 +3,8 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/accordion.css';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/accordion.css';
 
 
 export const Default = () => `

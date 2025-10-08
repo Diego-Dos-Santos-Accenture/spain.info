@@ -3,7 +3,7 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const stylesheet = '/styles/home.css';
+const stylesheet = 'styles/home.css';
 
 export const Homepage = () => `
   <link rel="stylesheet" href="${stylesheet}" />

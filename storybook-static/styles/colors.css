@@ -126,7 +126,6 @@ h3 {
     justify-content: space-between;
 }
 
-/* Typography inside color swatches */
 .swatch-typo-aa {
     font-size: 28px;
     font-weight: 600;
@@ -236,7 +235,6 @@ h3 {
     background: #BB2622;
 }
 
-/* Intro gray strip */
 .intro-strip { background:#F5F5F5; }
 .intro-strip .intro-text { margin: 24px 0; font-size: 18px; line-height: 1.6; color:#1D1C20; }
 

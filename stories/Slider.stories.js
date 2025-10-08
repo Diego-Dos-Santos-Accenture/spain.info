@@ -3,8 +3,8 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const stylesheet = '/styles/slider.css';
-const baseStylesheet = '/styles/layout.css';
+const stylesheet = 'styles/slider.css';
+const baseStylesheet = 'styles/layout.css';
 
 function renderSlider() {
   return `

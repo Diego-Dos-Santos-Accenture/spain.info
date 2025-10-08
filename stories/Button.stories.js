@@ -3,7 +3,7 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const stylesheet = '/styles/buttons.css';
+const stylesheet = 'styles/buttons.css';
 
 export const Primary = () => `
   <link rel="stylesheet" href="${stylesheet}" />

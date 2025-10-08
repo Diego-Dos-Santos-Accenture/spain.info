@@ -1,5 +1,5 @@
 /** @type { import('@storybook/html-vite').StorybookConfig } */
-const config = {
+export default {
   stories: [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)"
@@ -13,5 +13,3 @@ const config = {
     options: {}
   }
 };
-
-module.exports = config;

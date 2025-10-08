@@ -3,11 +3,10 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/pagination.css';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/pagination.css';
 
 export const Default = () => {
-  // Define the Stencil Web Component inline
   const script = `
     class SpainPagination extends HTMLElement {
       constructor() {

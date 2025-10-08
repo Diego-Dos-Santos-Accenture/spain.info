@@ -5,12 +5,9 @@
 }
 
 :root {
-    /* Text colors */
     --color-text: #1D1C20;
     --color-text-muted: #4A4A4A;
-    /* Brand */
     --color-brand-yellow: #FFD300;
-    /* Typography scale */
     --font-size-sm: 16px;
     --line-height-sm: 24px;
     --font-size-md: 20px;
@@ -53,8 +50,6 @@ body {
     margin: 0 auto;
     padding: 24px;
 }
-
-/* removed section-grey wrapper from Text Field */
 
 .hero {
     background-color: #0A0A0A;
@@ -164,14 +159,11 @@ h4 {
     margin: 16px 0 32px;
 }
 
-/* Lateral texts (sidebar) */
 .section-aside h2 { font-size: var(--font-size-md); line-height: var(--line-height-sm); font-weight: 700; color: var(--color-text); }
 .section-aside p { font-size: var(--font-size-sm); line-height: var(--line-height-sm); color: var(--color-text-muted); }
 
-/* Global small body text utility */
 .text-body-sm { font-size: var(--font-size-sm); line-height: var(--line-height-sm); color: var(--color-text-muted); }
 
-/* Grid image sizes based on minimum breakpoints */
 .grid-visual.mobile-grid {
     max-width: 375px;
 }
@@ -214,7 +206,6 @@ h4 {
     flex-shrink: 0;
 }
 
-/* Utilities replacing inline widths in Layout story */
 .w-252 { width: 252px; }
 .w-216 { width: 216px; }
 .w-184 { width: 184px; }

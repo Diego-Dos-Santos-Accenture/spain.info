@@ -3,9 +3,9 @@ export default {
   parameters: { layout: 'fullscreen' }
 };
 
-const baseStylesheet = '/styles/layout.css';
-const stylesheet = '/styles/tabs.css';
-const mobileImg = '/images/Mobile.png';
+const baseStylesheet = 'styles/layout.css';
+const stylesheet = 'styles/tabs.css';
+const mobileImg = 'images/Mobile.png';
 
 function tabsScript() {
   const script = document.createElement('script');
