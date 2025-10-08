@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https:/Diego-Dos-Santos-Accenture.github.io/spain.info",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "check:inline": "rg -n --fixed-strings style=\\\" stories || true"
+    "check:inline": "rg -n --fixed-strings style=\\\" stories || true",
+    "deploy": "gh-pages -d storybook-static",
+    "predeploy": "npm run build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,7 @@
     "@storybook/addon-docs": "^8.6.14",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/html-vite": "^8.6.14",
+    "gh-pages": "^6.3.0",
     "storybook": "^8.6.14",
     "vite": "^5.4.10"
   }
