@@ -10,7 +10,6 @@ export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Alert Component (inline para demo)
     class SpainAlert extends HTMLElement {
       constructor() {
         super();
@@ -159,12 +158,43 @@ Default.parameters = {
   stencil: {
     usage: 'Ejemplo de cómo usar el Alert como Web Component de Stencil con diferentes variantes.',
     html: '<spain-alert variant="success" title="Congratulations!" description="You successfully subscribed to our newsletter." show-close="true"></spain-alert>',
-    css: `.alert-card{display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:12px;background:#FFFFFF;border:1px solid #E5E5E5}
-.alert-card.alert-success{border-color:#22C55E}
-.alert-title{font-weight:700;color:#1B1C20}
-.alert-desc{color:#4A4A4A}
-.alert-btn{background:#1B1C20;color:#fff;border:none;border-radius:24px;padding:6px 12px}
-.alert-close{background:transparent;border:none;font-size:18px}
+    css: `
+.alert-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+}
+
+.alert-card.alert-success {
+  border-color: #22C55E;
+}
+
+.alert-title {
+  font-weight: 700;
+  color: #1B1C20;
+}
+
+.alert-desc {
+  color: #4A4A4A;
+}
+
+.alert-btn {
+  background: #1B1C20;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 6px 12px;
+}
+
+.alert-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';

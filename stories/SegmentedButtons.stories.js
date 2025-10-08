@@ -149,15 +149,80 @@ Default.parameters = {
   stencil: {
     usage: 'Segmented Buttons con tamaños M y S. Copia HTML, CSS y TSX para reutilizar el componente tal cual.',
     html: '<spain-segmented-buttons size="m" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-3">Option 3 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-4">Option 4 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>\n\n<spain-segmented-buttons size="s" value="option-1">\n  <spain-segmented-option value="option-1">Option 1 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n  <spain-segmented-option value="option-2">Option 2 <img class="sg-image" src="/images/Placeholder.svg" alt="" /></spain-segmented-option>\n</spain-segmented-buttons>',
-    css: `.segmented{display:inline-flex;background:#fff;border:2px solid #1D1C20;border-radius:999px;gap:4px;height:44px;padding:4px;align-items:center;box-sizing:border-box}
-.segmented.seg-m{width:496px}
-.segmented.seg-s{width:248px}
-.segmented .seg-btn{border:0;background:transparent;padding:16px;border-radius:999px;cursor:pointer;color:#1D1C20;font-weight:500;flex:1 1 0;text-align:center;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:8px;font-size:16px;line-height:24px;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:none}
-.segmented .seg-btn.is-active{background:#FFD300;color:#1B1C20}
-.segmented .seg-btn:disabled{opacity:.4;cursor:not-allowed}
-.segmented .seg-btn:focus-visible{outline:3px solid #FFD300;outline-offset:2px;border-radius:999px}
-.segmented .seg-btn img{width:18px;height:18px;margin-left:10px;display:inline-block;vertical-align:middle;border:none;flex-shrink:0}
-.segmented.seg-s .seg-btn{padding:10px;height:32px;min-height:32px}`,
+    css: `
+.segmented {
+  display: inline-flex;
+  background: #fff;
+  border: 2px solid #1D1C20;
+  border-radius: 999px;
+  gap: 4px;
+  height: 44px;
+  padding: 4px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.segmented.seg-m {
+  width: 496px;
+}
+
+.segmented.seg-s {
+  width: 248px;
+}
+
+.segmented .seg-btn {
+  border: 0;
+  background: transparent;
+  padding: 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #1D1C20;
+  font-weight: 500;
+  flex: 1 1 0;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.segmented .seg-btn.is-active {
+  background: #FFD300;
+  color: #1B1C20;
+}
+
+.segmented .seg-btn:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.segmented .seg-btn:focus-visible {
+  outline: 3px solid #FFD300;
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+.segmented .seg-btn img {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  flex-shrink: 0;
+}
+
+.segmented.seg-s .seg-btn {
+  padding: 10px;
+  height: 32px;
+  min-height: 32px;
+}`,
     tsx: `import { Component, h, Prop, Event, EventEmitter, Element } from '@stencil/core';
 
 @Component({ tag: 'spain-segmented-option', shadow: true, styleUrl: 'segmented-buttons.css' })
@@ -192,5 +257,3 @@ export class SpainSegmentedButtons {
 }`
   }
 };
-
-

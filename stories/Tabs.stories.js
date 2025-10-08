@@ -7,7 +7,7 @@ const baseStylesheet = '/styles/layout.css';
 const stylesheet = '/styles/tabs.css';
 const mobileImg = '/images/Mobile.png';
 
-function tabsScript(){
+function tabsScript() {
   const script = document.createElement('script');
   script.innerHTML = `
     (function(){
@@ -119,7 +119,7 @@ export const Default = () => `
           <div class="tabs__list" role="tablist" aria-label="Tabs master">
             <button class="tabs__btn tabs__btn--active" role="tab" aria-selected="true" aria-controls="tab-panel-1" id="tab-1">Tab 1</button>
             <button class="tabs__btn tabs__btn--hover" role="tab" aria-selected="false" aria-controls="tab-panel-2" id="tab-2">Tab 2</button>
-            <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-3">Tab 3</button>
+            <button class="tabs__btn tabs__btn--selected" role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-3">Tab 3</button>
             <button class="tabs__btn tabs__btn--disabled" role="tab" aria-selected="false" aria-controls="tab-panel-4" id="tab-4" disabled>Tab 4</button>
             <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-panel-5" id="tab-5">Tab 5</button>
             <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-panel-6" id="tab-6">Tab 6</button>
@@ -145,20 +145,64 @@ export const Default = () => `
   </div>
 `;
 
-Default.parameters = { 
+Default.parameters = {
   docs: { source: { code: '<div class="tabs"><button class="tab-btn is-active">Tab</button></div>', state: 'closed' } },
   stencil: {
     usage: 'Ejemplo funcional con dos tabs: una interactiva (Active/ Hover/ Selected) y otra Disabled.',
     html: '<spain-tabs-demo></spain-tabs-demo>',
-    css: `.tabs__list{display:flex;gap:8px;padding:6px 0;border-radius:999px;width:fit-content;background:#fff}
-.tabs__btn{appearance:none;border:2px solid #1D1C20;background:transparent;padding:12px 24px;border-radius:999px;font-weight:600;color:#1D1C20;cursor:pointer;font-size:16px;line-height:1}
-.tabs__btn--active{background:#FFD300;border-color:#1D1C20;color:#1B1C20}
-.tabs__btn--disabled{background:#E5E5E5;color:#666;border-color:#E5E5E5;cursor:not-allowed}
-.tabs__btn--hover{background:transparent;border-color:#FFD300;color:#1B1C20}
-.tabs__btn--selected{background:transparent;border-color:#1D1C20;color:#1B1C20}
-.tabs__btn:not(:disabled):not(.tabs__btn--active):not(.tabs__btn--selected):hover{background:transparent;border-color:#FFD300;color:#1B1C20}`,
+    css: `
+.tabs__list {
+  display: flex;
+  gap: 8px;
+  padding: 6px 0;
+  border-radius: 999px;
+  width: fit-content;
+  background: #fff;
+}
+
+.tabs__btn {
+  appearance: none;
+  border: 2px solid #1D1C20;
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #1D1C20;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.tabs__btn--active {
+  background: transparent;
+  border-color: #1D1C20;
+  color: #1B1C20;
+}
+
+.tabs__btn--disabled {
+  background: #E5E5E5;
+  color: #666;
+  border-color: #E5E5E5;
+  cursor: not-allowed;
+}
+
+.tabs__btn--hover {
+  background: transparent;
+  border-color: #FFD300;
+  color: #1B1C20;
+}
+
+.tabs__btn--selected {
+  background: #FFD300;
+  border-color: #FFD300;
+  color: #1B1C20;
+}
+
+.tabs__btn:not(:disabled):not(.tabs__btn--active):not(.tabs__btn--selected):hover {
+  background: transparent;
+  border-color: #FFD300;
+  color: #1B1C20;
+}`,
     tsx: 'import { Component, h, State } from "@stencil/core";\n\n@Component({ tag: "spain-tabs-demo", shadow: true, styleUrl: "tabs.css" })\nexport class SpainTabsDemo {\n  @State() state: "active" | "hover" | "selected" = "active";\n\n  private onClick = () => {\n    this.state = this.state === "active" ? "hover" : this.state === "hover" ? "selected" : "active";\n  };\n\n  private getFirstBtnClass(){\n    if(this.state === "active") return "tabs__btn tabs__btn--active";\n    if(this.state === "hover") return "tabs__btn tabs__btn--hover";\n    return "tabs__btn tabs__btn--selected";\n  }\n\n  render(){\n    return (\n      <div class="tabs__list" role="tablist" aria-label="Tabs demo">\n        <button class={this.getFirstBtnClass()} role="tab" onClick={this.onClick}>Tab</button>\n        <button class="tabs__btn tabs__btn--disabled" role="tab" disabled>Tab</button>\n      </div>\n    );\n  }\n}'
   }
 };
-
-

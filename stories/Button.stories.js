@@ -122,14 +122,53 @@ Primary.parameters = {
   stencil: {
     usage: 'Botón primario con diferentes tamaños y estados.',
     html: '<spain-button variant="primary" size="l">Button</spain-button>',
-    css: `.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:24px;border:none;font-weight:600;cursor:pointer;transition:all 0.2s}
-.btn-primary{background:#FFD300;color:#1B1C20}
-.btn-primary:hover{background:#E6BE00}
-.btn-primary:disabled{background:#E5E5E5;color:#999;cursor:not-allowed}
-.btn-l{padding:16px 32px;font-size:16px}
-.btn-m{padding:12px 24px;font-size:14px}
-.btn-xs{padding:8px 16px;font-size:12px}
-.btn-icon{width:16px;height:16px}
+    css: `
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #FFD300;
+  color: #1B1C20;
+}
+
+.btn-primary:hover {
+  background: #E6BE00;
+}
+
+.btn-primary:disabled {
+  background: #E5E5E5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.btn-l {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
@@ -171,7 +210,6 @@ export class SpainButton {
 export const Secondary = () => `
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Button Component (inline para demo)
     class SpainButton extends HTMLElement {
       constructor() {
         super();
@@ -281,14 +319,56 @@ Secondary.parameters = {
   stencil: {
     usage: 'Botón secundario con borde y fondo transparente.',
     html: '<spain-button variant="secondary" size="l">Button</spain-button>',
-    css: `.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:24px;border:none;font-weight:600;cursor:pointer;transition:all 0.2s}
-.btn-secondary{background:transparent;color:#1B1C20;border:1px solid #1B1C20}
-.btn-secondary:hover{background:#1B1C20;color:#fff}
-.btn-secondary:disabled{background:transparent;color:#999;border-color:#E5E5E5;cursor:not-allowed}
-.btn-l{padding:16px 32px;font-size:16px}
-.btn-m{padding:12px 24px;font-size:14px}
-.btn-xs{padding:8px 16px;font-size:12px}
-.btn-icon{width:16px;height:16px}
+    css: `
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1B1C20;
+  border: 1px solid #1B1C20;
+}
+
+.btn-secondary:hover {
+  background: #1B1C20;
+  color: #fff;
+}
+
+.btn-secondary:disabled {
+  background: transparent;
+  color: #999;
+  border-color: #E5E5E5;
+  cursor: not-allowed;
+}
+
+.btn-l {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
@@ -330,7 +410,6 @@ export class SpainButton {
 export const Tertiary = () => `
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Button Component (inline para demo)
     class SpainButton extends HTMLElement {
       constructor() {
         super();
@@ -440,14 +519,55 @@ Tertiary.parameters = {
   stencil: {
     usage: 'Botón terciario con estilo minimalista.',
     html: '<spain-button variant="tertiary" size="l">Button</spain-button>',
-    css: `.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:24px;border:none;font-weight:600;cursor:pointer;transition:all 0.2s}
-.btn-tertiary{background:transparent;color:#666;text-decoration:underline}
-.btn-tertiary:hover{color:#1B1C20;text-decoration:none}
-.btn-tertiary:disabled{color:#999;cursor:not-allowed;text-decoration:none}
-.btn-l{padding:16px 32px;font-size:16px}
-.btn-m{padding:12px 24px;font-size:14px}
-.btn-xs{padding:8px 16px;font-size:12px}
-.btn-icon{width:16px;height:16px}
+    css: `
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-tertiary {
+  background: transparent;
+  color: #666;
+  text-decoration: underline;
+}
+
+.btn-tertiary:hover {
+  color: #1B1C20;
+  text-decoration: none;
+}
+
+.btn-tertiary:disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.btn-l {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
@@ -489,7 +609,6 @@ export class SpainButton {
 export const ButtonLink = () => `
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Button Component (inline para demo)
     class SpainButton extends HTMLElement {
       constructor() {
         super();
@@ -599,14 +718,56 @@ ButtonLink.parameters = {
   stencil: {
     usage: 'Botón con estilo de enlace para acciones secundarias.',
     html: '<spain-button variant="link" size="l">Button</spain-button>',
-    css: `.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:24px;border:none;font-weight:600;cursor:pointer;transition:all 0.2s}
-.btn-link{background:transparent;color:#1B1C20;text-decoration:none;padding:8px 0}
-.btn-link:hover{color:#FFD300;text-decoration:underline}
-.btn-link:disabled{color:#999;cursor:not-allowed;text-decoration:none}
-.btn-l{padding:12px 0;font-size:16px}
-.btn-m{padding:8px 0;font-size:14px}
-.btn-xs{padding:6px 0;font-size:12px}
-.btn-icon{width:16px;height:16px}
+    css: `
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-link {
+  background: transparent;
+  color: #1B1C20;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.btn-link:hover {
+  color: #FFD300;
+  text-decoration: underline;
+}
+
+.btn-link:disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.btn-l {
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 6px 0;
+  font-size: 12px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
@@ -779,16 +940,68 @@ DarkTheme.parameters = {
   stencil: {
     usage: 'Todos los botones en tema oscuro con estilos adaptados.',
     html: '<div class="dark-theme"><spain-button variant="primary" size="l">Button</spain-button></div>',
-    css: `.dark-theme{background:#1B1C20;color:#fff;padding:24px;border-radius:8px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:24px;border:none;font-weight:600;cursor:pointer;transition:all 0.2s}
-.btn-primary{background:#FFD300;color:#1B1C20}
-.btn-secondary{background:transparent;color:#fff;border:1px solid #fff}
-.btn-tertiary{background:transparent;color:#999;text-decoration:underline}
-.btn-link{background:transparent;color:#fff;text-decoration:none}
-.btn-l{padding:16px 32px;font-size:16px}
-.btn-m{padding:12px 24px;font-size:14px}
-.btn-xs{padding:8px 16px;font-size:12px}
-.btn-icon{width:16px;height:16px}
+    css: `
+.dark-theme {
+  background: #1B1C20;
+  color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #FFD300;
+  color: #1B1C20;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-tertiary {
+  background: transparent;
+  color: #999;
+  text-decoration: underline;
+}
+
+.btn-link {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-l {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';

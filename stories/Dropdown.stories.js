@@ -224,18 +224,88 @@ Default.parameters = {
   stencil: {
     usage: 'Dropdown en estado abierto con lista de opciones desplegable.',
     html: '<spain-dropdown size="m" label="Label" open="true"><spain-dropdown-option>Option 1</spain-dropdown-option><spain-dropdown-option>Option 2</spain-dropdown-option></spain-dropdown>',
-    css: `.dd{position:relative;display:inline-block;width:100%;max-width:200px}
-.dd-trigger{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border:1px solid #E5E5E5;border-radius:8px;background:#fff;cursor:pointer;transition:all 0.2s}
-.dd-trigger:hover{border-color:#FFD300;box-shadow:0 0 0 3px rgba(255,211,0,0.1)}
-.dd-label{font-size:14px;color:#1B1C20}
-.dd-caret{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #666;transition:transform 0.2s}
-.dd-open .dd-caret{transform:rotate(180deg)}
-.dd-menu{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #E5E5E5;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:1000;margin-top:4px}
-.dd-option{padding:12px 16px;cursor:pointer;transition:background 0.2s;font-size:14px;color:#1B1C20}
-.dd-option:hover{background:#F8F8F7}
-.dd-l .dd-trigger{padding:16px 20px;font-size:16px}
-.dd-m .dd-trigger{padding:12px 16px;font-size:14px}
-.dd-s .dd-trigger{padding:8px 12px;font-size:12px}
+    css: `
+.dd {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+}
+
+.dd-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dd-trigger:hover {
+  border-color: #FFD300;
+  box-shadow: 0 0 0 3px rgba(255, 211, 0, 0.1);
+}
+
+.dd-label {
+  font-size: 14px;
+  color: #1B1C20;
+}
+
+.dd-caret {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #666;
+  transition: transform 0.2s;
+}
+
+.dd-open .dd-caret {
+  transform: rotate(180deg);
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.dd-option {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  color: #1B1C20;
+}
+
+.dd-option:hover {
+  background: #F8F8F7;
+}
+
+.dd-l .dd-trigger {
+  padding: 16px 20px;
+  font-size: 16px;
+}
+
+.dd-m .dd-trigger {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.dd-s .dd-trigger {
+  padding: 8px 12px;
+  font-size: 12px;
+}
 `,
     tsx: `
 import { Component, h, Prop, State, Event, EventEmitter, Listen } from '@stencil/core';

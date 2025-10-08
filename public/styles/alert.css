@@ -199,7 +199,6 @@
         margin: 160px 0 48px !important;
     }
 
-    /* Utilities to replace inline styles in story markup */
     .flex-row-8 { display:flex; gap:8px; align-items:center; }
     .mt-12 { margin-top:12px; }
 

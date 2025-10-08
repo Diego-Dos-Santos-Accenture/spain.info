@@ -71,9 +71,30 @@ Default.parameters = {
   stencil: {
     usage: 'Tabla adaptable en Stencil. Copia HTML, CSS y TSX para reutilizarla sin cambios visuales.',
     html: '<spain-table headers="[\"Col 1\",\"Col 2\"]" rows="[[\"A\",\"B\"],[\"C\",\"D\"]]"></spain-table>',
-    css: `.tb, .table__table{width:100%;border-collapse:collapse;font-size:14px;color:#1D1C20}
-.tb thead th{background:#1B1C20;color:#fff;text-align:left;padding:12px;font-weight:600;font-size:12px}
-.tb tbody td{padding:12px;border-top:1px solid #EAEAEA;font-size:12px;color:#4A4A4A}`,
+    css: `
+.tb, .table__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #1D1C20;
+}
+
+.tb thead th {
+  background: #1B1C20;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tb tbody td {
+  padding: 12px;
+  border-top: 1px solid #EAEAEA;
+  font-size: 12px;
+  color: #4A4A4A;
+}
+`,
     tsx: 'import { Component, h, Prop } from "@stencil/core";\n\n@Component({ tag: "spain-table", shadow: true, styleUrl: "table.css" })\nexport class SpainTable {\n  @Prop() headers: string[] = [];\n  @Prop() rows: string[][] = [];\n  @Prop() variant?: string;\n  render(){\n    return (\n      <table class={\"tb table__table \" + (this.variant ? \"tb-\"+this.variant : \"\")}>\n        <thead><tr>{this.headers.map(h => <th>{h}</th>)}</tr></thead>\n        <tbody>{this.rows.map(r => <tr>{r.map(c => <td innerHTML={c}></td>)}</tr>)}</tbody>\n      </table>\n    );\n  }\n}'
   }
 };
@@ -108,6 +129,3 @@ const tableInlineScript = (() => {
   `;
   return script.outerHTML;
 })();
-
-
-

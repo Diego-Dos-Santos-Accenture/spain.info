@@ -128,7 +128,53 @@ const sliderParameters = {
   stencil: {
     usage: 'Barra de progreso para Carousel con 3 etapas y dos botones a la derecha.',
     html: '<spain-progress-3 step="1"></spain-progress-3>',
-    css: '.prg{display:flex;align-items:center;gap:12px}\n.prg-line{position:relative;flex:1;height:2px;background:#F2F2F2}\n.prg-fill{position:absolute;top:0;height:2px;background:#E73625;width:40%;left:0}\n.prg-actions{display:inline-flex;gap:8px}\n.prg-btn{width:24px;height:24px;border-radius:50%;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:#E73625}\n.prg-btn:disabled{background:#EAEAEA;color:#8C8C8C;cursor:not-allowed}',
+    css: `
+.prg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prg-line {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: #F2F2F2;
+}
+
+.prg-fill {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background: #E73625;
+  width: 40%;
+  left: 0;
+}
+
+.prg-actions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.prg-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #E73625;
+}
+
+.prg-btn:disabled {
+  background: #EAEAEA;
+  color: #8C8C8C;
+  cursor: not-allowed;
+}
+`,
     tsx: 'import { Component, h, Prop, State, Listen } from "@stencil/core";\n\n@Component({ tag: "spain-progress-3", shadow: true, styleUrl: "slider.css" })\nexport class SpainProgress3 {\n  @Prop({ mutable: true, reflect: true }) step: 1 | 2 | 3 = 1;\n  @State() left: string = "0%";\n\n  componentWillLoad() { this.updatePosition(); }\n\n  @Listen("click")\n  onHostClick(ev: Event) {\n    const target = ev.composedPath()[0] as HTMLElement;\n    if (target && (target as any).getAttribute) {\n      if ((target as any).getAttribute("data-prev") !== null && this.step > 1) { this.step = (this.step - 1) as any; this.updatePosition(); }\n      if ((target as any).getAttribute("data-next") !== null && this.step < 3) { this.step = (this.step + 1) as any; this.updatePosition(); }\n    }\n  }\n\n  private updatePosition() {\n    if (this.step === 1) this.left = "0%";\n    else if (this.step === 2) this.left = "30%";\n    else this.left = "60%";\n  }\n\n  render() {\n    const prevDisabled = this.step === 1;\n    const nextDisabled = this.step === 3;\n    return (\n      <div class=\"prg\" role=\"group\" aria-label=\"Carousel progress\">\n        <div class=\"prg-line\"><div class=\"prg-fill\" style={{ left: this.left }} /></div>\n        <div class=\"prg-actions\">\n          <button class=\"prg-btn\" data-prev disabled={prevDisabled}>‹</button>\n          <button class=\"prg-btn\" data-next disabled={nextDisabled}>›</button>\n        </div>\n      </div>\n    );\n  }\n}'
   }
 };

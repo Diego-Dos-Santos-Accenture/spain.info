@@ -96,4 +96,82 @@ export const Default = () => `
   </div>
 `;
 
-Default.parameters = { docs: { source: { code: '<input class="text-field__input" />', state: 'closed' } } };
+Default.parameters = {
+  docs: { source: { code: '<spain-text-field label="Label" support="Supporting text"></spain-text-field>', state: 'closed' } },
+  stencil: {
+    usage: 'Campo de texto con label flotante (inside), soporte y estados (active/hover/focused/error).',
+    html: '<spain-text-field label="Nombre" type="text" support="Supporting text"></spain-text-field>',
+    css: `
+.text-field {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.text-field__label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #666;
+  transition: all .15s ease-in-out;
+  pointer-events: none;
+}
+
+.text-field__input {
+  border: 2px solid #1D1C20;
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C20;
+  background: #fff;
+}
+
+.text-field.is-focused .text-field__input {
+  outline: 3px solid #FFD300;
+  outline-offset: 2px;
+}
+
+.text-field--inside.has-value .text-field__label,
+.text-field--inside.is-focused .text-field__label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #1B1C20;
+  background: transparent;
+}
+
+.text-field__support {
+  font-size: 12px;
+  color: #666;
+}
+`,
+    tsx: `import { Component, h, Prop, State, Element } from '@stencil/core';
+
+@Component({ tag: 'spain-text-field', shadow: true, styleUrl: 'text-field.css' })
+export class SpainTextField {
+  @Element() el!: HTMLElement;
+  @Prop() label: string = 'Label';
+  @Prop() support: string = 'Supporting text';
+  @Prop() value: string = '';
+  @Prop() type: 'text' | 'email' | 'password' = 'text';
+  @State() focused = false;
+
+  private onFocus = () => { this.focused = true; };
+  private onBlur = () => { this.focused = false; };
+  private onInput = (e: Event) => { this.value = (e.target as HTMLInputElement).value; };
+
+  render(){
+    const cls = 'text-field text-field--m text-field--inside' + (this.focused ? ' is-focused' : '') + (this.value ? ' has-value' : '');
+    return (
+      <div class={cls}>
+        <label class="text-field__label">{this.label}</label>
+        <input class="text-field__input" type={this.type} value={this.value} placeholder={this.label} onFocus={this.onFocus} onBlur={this.onBlur} onInput={this.onInput} />
+        <div class="text-field__support">{this.support}</div>
+      </div>
+    );
+  }
+}`
+  }
+};

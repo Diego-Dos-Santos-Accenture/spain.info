@@ -282,19 +282,80 @@ Default.parameters = {
   stencil: {
     usage: 'Use the Card as a Stencil component in HTML or JSX.',
     html: '<spain-card title="El norte por explorar" description="Montañas, costas bravas y un clima refrescante." image="/images/imgCard1.png" orientation="vertical"></spain-card>',
-    css: `.card{display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:all 0.2s;cursor:pointer}
-.card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,0.15)}
-.card--horizontal{flex-direction:row}
-.card--large{width:620px;height:104px}
-.card__image{width:100%;height:200px;object-fit:cover}
-.card--horizontal .card__image{width:200px;height:100%}
-.card--large .card__image{width:200px;height:104px}
-.card__content{padding:16px;flex:1}
-.card--large .card__content{padding:12px 16px}
-.card__title{font-size:18px;font-weight:600;color:#1B1C20;margin:0 0 8px 0}
-.card--large .card__title{font-size:16px;margin:0 0 4px 0}
-.card__description{font-size:14px;color:#666;line-height:1.4;margin:0}
-.card--large .card__description{font-size:12px;line-height:1.3}
+    css: `
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.card--horizontal {
+  flex-direction: row;
+}
+
+.card--large {
+  width: 620px;
+  height: 104px;
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card--horizontal .card__image {
+  width: 200px;
+  height: 100%;
+}
+
+.card--large .card__image {
+  width: 200px;
+  height: 104px;
+}
+
+.card__content {
+  padding: 16px;
+  flex: 1;
+}
+
+.card--large .card__content {
+  padding: 12px 16px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 0 0 8px 0;
+}
+
+.card--large .card__title {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+
+.card__description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card--large .card__description {
+  font-size: 12px;
+  line-height: 1.3;
+}
 `,
     tsx: `
 import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';

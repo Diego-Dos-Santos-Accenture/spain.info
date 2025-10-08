@@ -1,4 +1,3 @@
-/* Text Field spec page styles (DS layout + component) */
 .intro-strip {
     background: #F5F5F5;
 }
@@ -62,7 +61,6 @@
     margin-bottom: 16px;
 }
 
-/* figma spec helpers */
 .tf-spec-row {
     display: flex;
     gap: 32px;
@@ -98,7 +96,6 @@
     margin-bottom: 300px;
 }
 
-/* Master grid */
 .tf-grid-spec {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
@@ -140,7 +137,6 @@
     font-size: 12px;
 }
 
-/* Base */
 .text-field {
     display: flex;
     flex-direction: column;

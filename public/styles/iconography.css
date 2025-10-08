@@ -78,7 +78,6 @@ body {
     margin: 16px 0 32px;
 }
 
-/* Utilities replacing inline styles in iconography story */
 .fw-700 { font-weight:700; }
 .mb-12 { margin-bottom:12px; }
 .mt-24 { margin-top:24px; }
@@ -105,7 +104,6 @@ body {
     gap: 12px;
 }
 
-/* Specific typography helpers */
 .fs-14 { font-size: 0.875rem; }
 
 .icon-row {

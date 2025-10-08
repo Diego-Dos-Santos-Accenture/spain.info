@@ -6,11 +6,11 @@ export default {
 const baseStylesheet = '/styles/layout.css';
 const stylesheet = '/styles/accordion.css';
 
+
 export const Default = () => `
   <link rel="stylesheet" href="${baseStylesheet}" />
   <link rel="stylesheet" href="${stylesheet}" />
   <script>
-    // Stencil Accordion Component (inline para demo)
     class SpainAccordionItem extends HTMLElement {
       constructor() {
         super();
@@ -89,7 +89,6 @@ export const Default = () => `
     </div>
   </div>
 `;
-
 
 Default.parameters = {
   docs: { source: { code: '<div class="accordion__item">¿Qué es y cómo recuperar el IVA?</div>', state: 'closed' } },

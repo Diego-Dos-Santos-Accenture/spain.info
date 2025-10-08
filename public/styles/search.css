@@ -1,20 +1,87 @@
-/* Search styles */
-.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
-.hero { background:#0A0A0A; color:#fff; padding:64px 0 48px; }
-.hero__title { font-size:56px; font-weight:700; color:#FFD300; }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
 
-.intro-strip { background:#F5F5F5; }
-.intro-strip .intro-text { margin:24px 0; font-size:18px; line-height:1.6; color:#1D1C20; }
+.hero {
+    background: #0A0A0A;
+    color: #fff;
+    padding: 64px 0 48px;
+}
 
-.srch-grid { display:grid; grid-template-columns: 240px 1fr; gap:24px; }
-.search__grid { display:grid; grid-template-columns: 240px 1fr; gap:24px; }
-.srch-col h4 { font-size:20px; line-height:24px; font-weight:700; color:#1D1C20; margin:16px 0 8px; }
-.srch-list { list-style:disc; padding-left:18px; margin: 8px 0 24px; }
-.search__list { list-style:disc; padding-left:18px; margin: 8px 0 24px; }
+.hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #FFD300;
+}
 
-.srch-title { margin-bottom:24px; font-weight:700; font-size:20px; line-height:24px; }
-.search__title { margin-bottom:24px; font-weight:700; font-size:20px; line-height:24px; }
-.srch-master { display:flex; justify-content:center; }
-.srch-image { width: 100%; max-width: 960px; height: auto; border: 1px dashed #C8C8C8; border-radius: 8px; }
+.intro-strip {
+    background: #F5F5F5;
+}
 
+.intro-strip .intro-text {
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1D1C20;
+}
 
+.srch-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.search__grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+}
+
+.srch-col h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1D1C20;
+    margin: 16px 0 8px;
+}
+
+.srch-list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 8px 0 24px;
+}
+
+.search__list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 8px 0 24px;
+}
+
+.srch-title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.search__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.srch-master {
+    display: flex;
+    justify-content: center;
+}
+
+.srch-image {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border: 1px dashed #C8C8C8;
+    border-radius: 8px;
+}

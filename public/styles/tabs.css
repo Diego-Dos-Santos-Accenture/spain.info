@@ -1,4 +1,3 @@
-/* Tabs */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,7 +42,7 @@
 }
 
 .tabs-master-col {
-    margin-left: 200px;
+    margin-left: 48px;
 }
 
 .tabs-list-bullets {
@@ -97,13 +96,19 @@
     line-height: 1;
 }
 
-.tab-btn.is-active, .tabs__btn--active {
-    background: #FFD300;
+.tabs__btn--active {
+    background: transparent;
     border-color: #1D1C20;
     color: #1B1C20;
 }
 
 .tab-btn::hover, .tabs__btn--hover {
+    background: transparent;
+    border-color: #FFD300;
+    color: #1B1C20;
+}
+
+.tabs__btn--hover {
     background: transparent;
     border-color: #FFD300;
     color: #1B1C20;
@@ -122,8 +127,8 @@
 }
 
 .tabs__btn--selected {
-    background: transparent;
-    border-color: #1D1C20;
+    background: #FFD300;
+    border-color: #FFD300;
     color: #1B1C20;
 }
 
