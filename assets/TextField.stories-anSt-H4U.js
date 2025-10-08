@@ -1,4 +1,4 @@
-const l={title:"Components/Text Field",parameters:{layout:"fullscreen"}},t="/styles/layout.css",s="/styles/text-field.css",e=()=>`
+const l={title:"Components/Text Field",parameters:{layout:"fullscreen"}},t="styles/layout.css",s="styles/text-field.css",e=()=>`
   <link rel="stylesheet" href="${t}" />
   <link rel="stylesheet" href="${s}" />
   <script>

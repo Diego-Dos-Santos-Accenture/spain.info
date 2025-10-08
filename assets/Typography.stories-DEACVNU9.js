@@ -1,4 +1,4 @@
-const l={title:"Foundations/Typography",parameters:{layout:"fullscreen"}},d="/styles/typography.css",a=()=>`
+const l={title:"Foundations/Typography",parameters:{layout:"fullscreen"}},d="styles/typography.css",a=()=>`
   <link rel="stylesheet" href="${d}" />
   <header class="top-nav">
     <div class="top-nav__inner">

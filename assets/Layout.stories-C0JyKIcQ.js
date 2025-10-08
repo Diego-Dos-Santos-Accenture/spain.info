@@ -1,4 +1,4 @@
-const c={title:"Foundations/Layout",parameters:{layout:"fullscreen"}},n="/styles/layout.css",s=()=>`
+const c={title:"Foundations/Layout",parameters:{layout:"fullscreen"}},n="styles/layout.css",s=()=>`
   <link rel="stylesheet" href="${n}" />
   <header class="top-nav">
     <div class="top-nav__inner">

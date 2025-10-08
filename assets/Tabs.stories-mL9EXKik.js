@@ -1,4 +1,4 @@
-const c={title:"Components/Tabs",parameters:{layout:"fullscreen"}},i="/styles/layout.css",l="/styles/tabs.css",o="/images/Mobile.png";function b(){const a=document.createElement("script");return a.innerHTML=`
+const c={title:"Components/Tabs",parameters:{layout:"fullscreen"}},i="styles/layout.css",l="styles/tabs.css",o="images/Mobile.png";function b(){const a=document.createElement("script");return a.innerHTML=`
     (function(){
       function initTabs(root){
         const buttons = Array.from(root.querySelectorAll('[role=tab]'));

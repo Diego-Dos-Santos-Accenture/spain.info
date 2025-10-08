@@ -1,4 +1,4 @@
-const o={title:"Components/Pagination",parameters:{layout:"fullscreen"}},n="/styles/layout.css",t="/styles/pagination.css",e=()=>`
+const o={title:"Components/Pagination",parameters:{layout:"fullscreen"}},n="styles/layout.css",t="styles/pagination.css",e=()=>`
     <script>${`
     class SpainPagination extends HTMLElement {
       constructor() {
@@ -348,7 +348,6 @@ export class SpainPagination {
     );
   }
 }`}};var a,s,i;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`() => {
-  // Define the Stencil Web Component inline
   const script = \`
     class SpainPagination extends HTMLElement {
       constructor() {

@@ -1,4 +1,4 @@
-const l={title:"Components/Alert",parameters:{layout:"fullscreen"}},a="/styles/layout.css",e="/styles/alert.css",t=()=>`
+const l={title:"Components/Alert",parameters:{layout:"fullscreen"}},a="styles/layout.css",e="styles/alert.css",t=()=>`
   <link rel="stylesheet" href="${a}" />
   <link rel="stylesheet" href="${e}" />
   <script>

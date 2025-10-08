@@ -1,4 +1,4 @@
-const a={title:"Components/Segmented Buttons",parameters:{layout:"fullscreen"}},t="/styles/layout.css",s="/styles/segmented-buttons.css",e=()=>`
+const a={title:"Components/Segmented Buttons",parameters:{layout:"fullscreen"}},t="styles/layout.css",s="styles/segmented-buttons.css",e=()=>`
   <script>
     (function(){
       const baseStylesheet = '${t}';

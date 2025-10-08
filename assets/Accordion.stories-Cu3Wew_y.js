@@ -1,4 +1,4 @@
-const a={title:"Components/Accordion",parameters:{layout:"fullscreen"}},c="/styles/layout.css",i="/styles/accordion.css",e=()=>`
+const a={title:"Components/Accordion",parameters:{layout:"fullscreen"}},c="styles/layout.css",i="styles/accordion.css",e=()=>`
   <link rel="stylesheet" href="${c}" />
   <link rel="stylesheet" href="${i}" />
   <script>

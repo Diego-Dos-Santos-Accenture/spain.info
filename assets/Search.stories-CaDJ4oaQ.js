@@ -1,4 +1,4 @@
-const n={title:"Components/Search",parameters:{layout:"fullscreen"}},r="/styles/layout.css",t="/styles/search.css",c="/images/Search.png",s=()=>`
+const n={title:"Components/Search",parameters:{layout:"fullscreen"}},r="styles/layout.css",t="styles/search.css",c="images/Search.png",s=()=>`
   <link rel="stylesheet" href="${r}" />
   <link rel="stylesheet" href="${t}" />
 

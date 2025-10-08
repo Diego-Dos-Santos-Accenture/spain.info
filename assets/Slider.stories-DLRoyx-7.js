@@ -1,4 +1,4 @@
-const l={title:"Components/Slider",parameters:{layout:"fullscreen"}},n="/styles/slider.css",r="/styles/layout.css";function a(){return`
+const l={title:"Components/Slider",parameters:{layout:"fullscreen"}},n="styles/slider.css",r="styles/layout.css";function a(){return`
   <link rel="stylesheet" href="${r}" />
   <link rel="stylesheet" href="${n}" />
 

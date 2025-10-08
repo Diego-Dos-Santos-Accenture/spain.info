@@ -1,4 +1,4 @@
-const f={title:"Components/Button",parameters:{layout:"fullscreen"}},t="/styles/buttons.css",n=()=>`
+const f={title:"Components/Button",parameters:{layout:"fullscreen"}},t="styles/buttons.css",n=()=>`
   <link rel="stylesheet" href="${t}" />
   <script>
     class SpainButton extends HTMLElement {

@@ -1,4 +1,4 @@
-const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="/styles/layout.css",t="/styles/card.css",a=()=>`
+const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/layout.css",t="styles/card.css",a=()=>`
   <link rel="stylesheet" href="${s}" />
   <link rel="stylesheet" href="${t}" />
   <script>

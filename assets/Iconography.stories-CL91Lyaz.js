@@ -1,4 +1,4 @@
-const e={title:"Foundations/Iconography",parameters:{layout:"fullscreen"}},i="/styles/iconography.css",s=()=>`
+const e={title:"Foundations/Iconography",parameters:{layout:"fullscreen"}},i="styles/iconography.css",s=()=>`
   <link rel="stylesheet" href="${i}" />
   <header class="top-nav">
     <div class="top-nav__inner">

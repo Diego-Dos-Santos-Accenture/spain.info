@@ -1,4 +1,4 @@
-const u={title:"Foundations/Colors",parameters:{layout:"fullscreen"}},p="/styles/layout.css",g="/styles/colors.css";function h(a){const e=a.replace("#",""),s=parseInt(e.length===3?e.split("").map(r=>r+r).join(""):e,16),t=s>>16&255,i=s>>8&255,v=s&255;return{r:t,g:i,b:v}}function F({r:a,g:e,b:s}){const t=[a,e,s].map(i=>(i=i/255,i<=.03928?i/12.92:Math.pow((i+.055)/1.055,2.4)));return .2126*t[0]+.7152*t[1]+.0722*t[2]}function n(a){try{return F(h(a))>.5?"#1B1C20":"#FFFFFF"}catch{return"#1B1C20"}}const o=()=>`
+const u={title:"Foundations/Colors",parameters:{layout:"fullscreen"}},p="styles/layout.css",g="styles/colors.css";function h(a){const e=a.replace("#",""),s=parseInt(e.length===3?e.split("").map(r=>r+r).join(""):e,16),t=s>>16&255,i=s>>8&255,v=s&255;return{r:t,g:i,b:v}}function F({r:a,g:e,b:s}){const t=[a,e,s].map(i=>(i=i/255,i<=.03928?i/12.92:Math.pow((i+.055)/1.055,2.4)));return .2126*t[0]+.7152*t[1]+.0722*t[2]}function n(a){try{return F(h(a))>.5?"#1B1C20":"#FFFFFF"}catch{return"#1B1C20"}}const o=()=>`
   <link rel="stylesheet" href="${p}" />
   <link rel="stylesheet" href="${g}" />
 

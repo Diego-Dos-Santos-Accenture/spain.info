@@ -1,4 +1,4 @@
-const d={title:"Foundations/Colors",parameters:{layout:"fullscreen"}},i="/styles/colors.css";function c(){const o=document.createElement("script");return o.innerHTML=`window.__toggleTheme = function(){
+const d={title:"Foundations/Colors",parameters:{layout:"fullscreen"}},i="styles/colors.css";function c(){const o=document.createElement("script");return o.innerHTML=`window.__toggleTheme = function(){
     document.body.classList.toggle('dark-theme');
     const button = document.querySelector('.theme-toggle');
     if (button) button.textContent = document.body.classList.contains('dark-theme') ? 'Toggle Light Theme' : 'Toggle Dark Theme';

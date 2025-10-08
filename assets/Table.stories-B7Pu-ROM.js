@@ -1,4 +1,4 @@
-const l={title:"Components/Table",parameters:{layout:"fullscreen"}},i="/styles/layout.css",n="/styles/table.css",e=()=>`
+const l={title:"Components/Table",parameters:{layout:"fullscreen"}},i="styles/layout.css",n="styles/table.css",e=()=>`
   <link rel="stylesheet" href="${i}" />
   <link rel="stylesheet" href="${n}" />
   ${o}
