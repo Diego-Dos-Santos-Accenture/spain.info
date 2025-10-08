@@ -42,7 +42,7 @@ const l={title:"Components/Slider",parameters:{layout:"fullscreen"}},n="styles/s
               <div class="slider-title">Master</div>
               
               <div class="slider-examples">
-                <img src="/images/Slider.png" alt="Slider Master" />
+                <img src="images/Slider.png" alt="Slider Master" />
 
                 <h4>Example</h4>
                 <div class="slider-progress-demo"><spain-progress-3 step="1"></spain-progress-3></div>

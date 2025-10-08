@@ -24,7 +24,7 @@ const a={title:"Components/Accordion",parameters:{layout:"fullscreen"}},c="style
           <link rel="stylesheet" href="${i}" />
           <div class="accordion__item \${this.open ? 'open' : ''}">
             <span class="accordion__label">\${this.getAttribute('label') || 'Accordion Item'}</span>
-            <img class="accordion__icon" src="\${this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'}" alt="toggle" />
+            <img class="accordion__icon" src="\${this.open ? 'images/circle-minus.svg' : 'images/circle-plus.svg'}" alt="toggle" />
           </div>
           <div class="accordion__panel" style="display: \${this.open ? 'block' : 'none'}">
             <slot></slot>
@@ -161,7 +161,7 @@ export class SpainAccordionItem {
           <span class="accordion__label">{this.label}</span>
           <img 
             class="accordion__icon" 
-            src={this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'} 
+            src={this.open ? 'images/circle-minus.svg' : 'images/circle-plus.svg'} 
             alt="toggle" 
           />
         </button>
@@ -205,7 +205,7 @@ export class SpainAccordion {
           <link rel="stylesheet" href="\${stylesheet}" />
           <div class="accordion__item \\\${this.open ? 'open' : ''}">
             <span class="accordion__label">\\\${this.getAttribute('label') || 'Accordion Item'}</span>
-            <img class="accordion__icon" src="\\\${this.open ? '/images/circle-minus.svg' : '/images/circle-plus.svg'}" alt="toggle" />
+            <img class="accordion__icon" src="\\\${this.open ? 'images/circle-minus.svg' : 'images/circle-plus.svg'}" alt="toggle" />
           </div>
           <div class="accordion__panel" style="display: \\\${this.open ? 'block' : 'none'}">
             <slot></slot>

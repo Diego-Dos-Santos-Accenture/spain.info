@@ -112,7 +112,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard1.png" 
+            image="images/imgCard1.png" 
             orientation="vertical"
             variation="small">
           </spain-card>
@@ -120,7 +120,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard1.png" 
+            image="images/imgCard1.png" 
             orientation="vertical"
             variation="small">
           </spain-card>
@@ -128,7 +128,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard2.png" 
+            image="images/imgCard2.png" 
             orientation="vertical"
             variation="row2">
           </spain-card>
@@ -136,13 +136,13 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard2.png" 
+            image="images/imgCard2.png" 
             orientation="vertical"
             variation="row2">
           </spain-card>
           
           <div class="card card--horizontal card--large card--static">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -150,7 +150,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           </div>
           
           <div class="card card--horizontal card--large card--static">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -162,7 +162,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
         <div class="card-variations-grid">
           <!-- Primera fila - 2 cards de 255px altura imagen, 415px altura card -->
           <div class="card card--vertical card--variation-small">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -170,7 +170,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           </div>
           
           <div class="card card--vertical card--variation-small">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -179,7 +179,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           
           <!-- Segunda fila - 2 cards de 453px altura imagen, 613px altura card -->
           <div class="card card--vertical card--variation-row2">
-            <img src="/images/imgCard2.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard2.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -187,7 +187,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           </div>
           
           <div class="card card--vertical card--variation-row2">
-            <img src="/images/imgCard2.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard2.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -196,7 +196,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           
           <!-- Tercera fila - 2 cards horizontales de 620x104px -->
           <div class="card card--horizontal card--variation-horizontal">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -204,7 +204,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
           </div>
           
           <div class="card card--horizontal card--variation-horizontal">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -266,7 +266,7 @@ const n={title:"Components/Card",parameters:{layout:"fullscreen"}},s="styles/lay
       </div>
     </div>
   </div>
-`;a.parameters={docs:{source:{code:'<div class="card"><img class="card__image" /><div class="card__content"><h3 class="card__title">Title</h3></div></div>',state:"closed"}},stencil:{usage:"Use the Card as a Stencil component in HTML or JSX.",html:'<spain-card title="El norte por explorar" description="Montañas, costas bravas y un clima refrescante." image="/images/imgCard1.png" orientation="vertical"></spain-card>',css:`
+`;a.parameters={docs:{source:{code:'<div class="card"><img class="card__image" /><div class="card__content"><h3 class="card__title">Title</h3></div></div>',state:"closed"}},stencil:{usage:"Use the Card as a Stencil component in HTML or JSX.",html:'<spain-card title="El norte por explorar" description="Montañas, costas bravas y un clima refrescante." image="images/imgCard1.png" orientation="vertical"></spain-card>',css:`
 .card {
   display: flex;
   flex-direction: column;
@@ -490,7 +490,7 @@ export class SpainCard {
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard1.png" 
+            image="images/imgCard1.png" 
             orientation="vertical"
             variation="small">
           </spain-card>
@@ -498,7 +498,7 @@ export class SpainCard {
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard1.png" 
+            image="images/imgCard1.png" 
             orientation="vertical"
             variation="small">
           </spain-card>
@@ -506,7 +506,7 @@ export class SpainCard {
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard2.png" 
+            image="images/imgCard2.png" 
             orientation="vertical"
             variation="row2">
           </spain-card>
@@ -514,13 +514,13 @@ export class SpainCard {
           <spain-card 
             title="El norte por explorar" 
             description="Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España." 
-            image="/images/imgCard2.png" 
+            image="images/imgCard2.png" 
             orientation="vertical"
             variation="row2">
           </spain-card>
           
           <div class="card card--horizontal card--large card--static">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -528,7 +528,7 @@ export class SpainCard {
           </div>
           
           <div class="card card--horizontal card--large card--static">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -540,7 +540,7 @@ export class SpainCard {
         <div class="card-variations-grid">
           <!-- Primera fila - 2 cards de 255px altura imagen, 415px altura card -->
           <div class="card card--vertical card--variation-small">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -548,7 +548,7 @@ export class SpainCard {
           </div>
           
           <div class="card card--vertical card--variation-small">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -557,7 +557,7 @@ export class SpainCard {
           
           <!-- Segunda fila - 2 cards de 453px altura imagen, 613px altura card -->
           <div class="card card--vertical card--variation-row2">
-            <img src="/images/imgCard2.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard2.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -565,7 +565,7 @@ export class SpainCard {
           </div>
           
           <div class="card card--vertical card--variation-row2">
-            <img src="/images/imgCard2.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard2.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">El norte por explorar</h3>
               <p class="card__description">Montañas, costas bravas y un clima refrescante. Otra forma de hacer turismo por España.</p>
@@ -574,7 +574,7 @@ export class SpainCard {
           
           <!-- Tercera fila - 2 cards horizontales de 620x104px -->
           <div class="card card--horizontal card--variation-horizontal">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>
@@ -582,7 +582,7 @@ export class SpainCard {
           </div>
           
           <div class="card card--horizontal card--variation-horizontal">
-            <img src="/images/imgCard1.png" alt="Card image" class="card__image" />
+            <img src="images/imgCard1.png" alt="Card image" class="card__image" />
             <div class="card__content">
               <h3 class="card__title">Cimadevilla milenaria</h3>
               <p class="card__description">Calles empedradas, vestigios romanos y el pulso del Cantábrico. Otra forma de hacer turismo por España.</p>

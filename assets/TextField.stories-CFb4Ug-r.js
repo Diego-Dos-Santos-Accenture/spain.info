@@ -63,12 +63,12 @@ const l={title:"Components/Text Field",parameters:{layout:"fullscreen"}},t="styl
 
       <div class="tf-content">
         <div class="tf-grid-spec">
-          <img src="/images/TextField-structure.png" alt="Text Field Master" />
+          <img src="images/TextField-structure.png" alt="Text Field Master" />
         </div>
 
         <div class="tf-title">Content & Supporting text</div>
         <div class="tf-card">
-          <img src="/images/Content&Support.png" alt="Text Field Content" />
+          <img src="images/Content&Support.png" alt="Text Field Content" />
         </div>
 
         <div class="tf-title">Examples</div>
@@ -220,12 +220,12 @@ export class SpainTextField {
 
       <div class="tf-content">
         <div class="tf-grid-spec">
-          <img src="/images/TextField-structure.png" alt="Text Field Master" />
+          <img src="images/TextField-structure.png" alt="Text Field Master" />
         </div>
 
         <div class="tf-title">Content & Supporting text</div>
         <div class="tf-card">
-          <img src="/images/Content&Support.png" alt="Text Field Content" />
+          <img src="images/Content&Support.png" alt="Text Field Content" />
         </div>
 
         <div class="tf-title">Examples</div>
